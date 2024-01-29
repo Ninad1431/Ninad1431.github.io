@@ -1,7 +1,115 @@
-<html>
-    <head>
-        <meta http-equiv="Refresh" content="0; url='https://daninhacxx.live/'" />
-    </head>
-    <body>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2c3e50; /* Dark background color */
+            color: #ecf0f1; /* Light text color */
+            margin: 0;
+            padding: 20px;
+        }
+
+        #quiz-container {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .question {
+            background-color: #34495e; /* Dark container background color */
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 10px; /* Increased spacing between options */
+            color: #ecf0f1; /* Light text color for options */
+        }
+
+        .dropdown-btn {
+            cursor: pointer;
+            color: #3498db;
+            text-decoration: underline;
+            margin-top: 10px; /* Increased spacing between question and dropdown */
+        }
+
+        .dropdown-content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #3498db; /* Border color for dropdown */
+            background-color: #2980b9; /* Dark background color for dropdown */
+            color: #ecf0f1; /* Light text color for dropdown */
+        }
+    </style>
+</head>
+<body>
+
+<div id="quiz-container"></div>
+
+<script>
+    // Sample questions
+    const questions = [
+    {
+            question: "As a cybersecurity professional, you are responsible for securing a high-traffic web application that uses MySQL as its backend database. Recently, there has been a surge of unauthorized login attempts, and you suspect that a seasoned black-hat hacker is behind them. This hacker has shown proficiency in SQL Injection and appears to be using the 'UNION' SQL keyword to trick the login process into returning additional data. However, your application's security measures include filtering special characters in user inputs, a method usually effective against such attacks. In this challenging environment, if the hacker still intends to exploit this SQL Injection vulnerability, which strategy is he most likely to employ?",
+            options: ["The hacker tries to manipulate the 'UNION' keyword in such a way that it triggers a database error potentially revealing valuable information about the database's structure", "The hacker alters his approach and injects a 'DROP TABLE' statement, a move that could potentially lead to the loss of vital data stored in the application's database", "The hacker attempts to bypass the special character filter by encoding his malicious input, which could potentially enable him to successfully inject damaging SQL queries", "The hacker switches tactics and resorts to a 'time-based blind' SQL Injection attack, which would force the application to delay its response, thereby revealing information based on the duration of the delay"],
+            answer: ""
+        },
+        {
+            question: "As an IT Security Analyst, you've been asked to review the security measures of an e-commerce website that relies on a SQL database for storing sensitive customer data. Recently, an anonymous tip has alerted you to a possible threat: a seasoned hacker who specializes in SQL Injection attacks may be targeting your system. The site already employs input validation measures to prevent basic injection attacks, and it blocks any user inputs containing suspicious patterns. However, this hacker is known to use advanced SQL Injection techniques. Given this situation, which of the following strategies would the hacker most likely adopt to bypass your security measures?",
+            options: ["The hacker could deploy an 'out-of-band' SQL Injection attack, extracting data via a different communication channel, such as DNS or HTTP requests", "The hacker may try to use SQL commands which are less known and less likely to be blocked by your system's security", "The hacker might employ a 'blind' SQL Injection attack, taking advantage of the application's true or false responses to extract data bit by bit", "The hacker may resort to a DDoS attack instead, attempting to crash the server and thus render the e-commerce site unavailable"],
+            answer: ""
+        },
+        {
+            question: "",
+            options: ["", "", "", ""],
+            answer: ""
+        },
+        // Add more questions similarly
+    ];
+
+    // Function to generate the quiz
+    function generateQuiz() {
+        const quizContainer = document.getElementById('quiz-container');
+
+        questions.forEach((q, index) => {
+            const questionDiv = document.createElement('div');
+            questionDiv.classList.add('question');
+            questionDiv.innerHTML = `
+                <p>${index + 1}. ${q.question}</p>
+                <div class="options">
+                    <label><input type="radio" name="q${index}" value="A"> A. ${q.options[0]}</label>
+                    <label><input type="radio" name="q${index}" value="B"> B. ${q.options[1]}</label>
+                    <label><input type="radio" name="q${index}" value="C"> C. ${q.options[2]}</label>
+                    <label><input type="radio" name="q${index}" value="D"> D. ${q.options[3]}</label>
+                </div>
+                <div class="dropdown-btn" onclick="toggleDropdown('dropdown_${index}')">Show Answer</div>
+                <div id="dropdown_${index}" class="dropdown-content">${q.answer}</div>
+            `;
+
+            quizContainer.appendChild(questionDiv);
+        });
+    }
+
+    // Function to toggle dropdown
+    function toggleDropdown(dropdownId) {
+        const dropdownContent = document.getElementById(dropdownId);
+        if (dropdownContent.style.display === 'block') {
+            dropdownContent.style.display = 'none';
+        } else {
+            dropdownContent.style.display = 'block';
+        }
+    }
+
+    // Call the function to generate the quiz
+    generateQuiz();
+</script>
+
+</body>
 </html>
