@@ -396,7 +396,7 @@
         {
             question: "In an advanced persistent threat scenario, an adversary follows a detailed set of procedures in the cyber kill chain. During one such instance, the adversary has successfully gained access to a corporate network and now attempts to obfuscate malicious traffic within legitimate network traffic. Which of the following actions would most likely be part of the adversary's current procedures?",
             options: ["Establishing a command-and-control server to communicate with compromised systerns.", "Conducting internal reconnaissance using PowerShell scripts.", "Initiating DNS tunneling to communicate with the command-and-control server.", "Employing data staging techniques to collect and aggregate sensitive data."],
-            answer: ""
+            answer: "C. Initiating DNS tunneling to communicate with the command-and-control server."
         },
         {
             question: "An experienced cyber attacker has created a fake Linkedin profile, successfully impersonating a high-ranking official from a well-established company, to execute a social engineering attack. The attacker then connected with other employees within the organization, receiving invitations to exclusive corporate events and gaining access to proprietary project details shared within the network. What advanced social engineering technique has the attacker primarily used to exploit the system and what is the most likely immediate threat to the organization?",
@@ -406,82 +406,82 @@
         {
             question: "You are a cybersecurity consultant for a global organization. The organization has adopted a Bring Your Own Device (BYOD)policy, but they have recently experienced a phishing incident where an employee's device was compromised. In the investigation, you discovered that the phishing attack occurred through a third-party email app that the employee had installed. Given the need to balance security and user autonomy under the BYOD policy, how should the organization mitigate the risk of such incidents? Moreover, consider a measure that would prevent similar attacks without overly restricting the use of personal devices.",
             options: ["Implement a mobile device management solution that restricts the installation of non-approved applications.", "Require all employee devices to use a company-provided VPN for internet access.", "Provide employees with corporate-owned devices for work-related tasks.", "Conduct regular cybersecurity awareness training, focusing on phishing attacks."],
-            answer: ""
+            answer: "D. Conduct regular cybersecurity awareness training, focusing on phishing attacks."
         },
         {
             question: "A large organization has recently performed a vulnerability assessment using Nessus Professional, and the security team is now preparing the final report. They have identified a high-risk vulnerability, named XYZ, which could potentially allow unauthorized access to the network. In preparing the report, which of the following elements would NOT be typically included in the detailed documentation for this specific vulnerability?",
-            options: ["The list of all affected systerns within the organization that are susceptible to the identified vulnerability", "The total number of high, medium, and low-risk vulnerabilities detected throughout the network", "The CVE ID of the vulnerability and its mapping to the vulnerability's name, XYZ", "Proof of concept (PoC) of the vulnerability, if possible, to demonstrate its potential impact on the system"],
-            answer: ""
+            options: ["The list of all affected systems within the organization that are susceptible to the identified vulnerability", "The total number of high, medium, and low-risk vulnerabilities detected throughout the network", "The CVE ID of the vulnerability and its mapping to the vulnerability's name, XYZ", "Proof of concept (PoC) of the vulnerability, if possible, to demonstrate its potential impact on the system"],
+            answer: "D. Proof of concept (PoC) of the vulnerability, if possible, to demonstrate its potential impact on the system"
         },
         {
             question: "A large corporate network is being subjected to repeated sniffing attacks. To increase security, the company's IT department decides to implement a combination of several security measures. They permanently add the MAC address of the gateway to the ARP cache, switch to using IPv6 instead of IPv4, implement the use of encrypted sessions such as SSH instead of Telnet, and use Secure File Transfer Protocol instead of FTP. However, they are still faced with the threat of sniffing. Considering the countermeasures, what should be their next step to enhance network security? ",
             options: ["Use HTTP instead of HTTPS for protecting usernames and passwords", "Enable network identification broadcasts", "Implement network scanning and monitoring tools", "Retrieve MAC addresses from the OS"],
-            answer: ""
+            answer: "C. Implement network scanning and monitoring tools"
         },
         {
             question: "A Certified Ethical Hacker is attempting to gather information about a target organization's network structure through network footprinting. During the operation, they encounter ICMP blocking by the target system's firewall. The hacker wants to ascertain the path that packets take to the host system from a source, using an alternative protocol. Which of the following actions should the hacker consider next? ",
             options: ["Use the ARIN Whois database search tool to find the network range of the target network", "Use UDP Traceroute in the Linux operating system by executing the 'traceroute' command with the destination IP or domain name", "Utilize the Path Analyzer Pro to trace the route from the source to the destination target systems", "Use the ICMP Traceroute on the Windows operating system as it is the default utility"],
-            answer: ""
+            answer: "B. Use UDP Traceroute in the Linux operating system by executing the 'traceroute' command with the destination IP or domain name"
         },
         {
             question: "As the chief security officer at SecureMobile, you are overseeing the development of a mobile banking application. You are aware of the potential risks of man-in-the-middle (MitM) attacks where an attacker might intercept communication between the app and the bank's servers. Recently, you have learned about a technique used by attackers where they use rogue Wi-Fi hotspots to conduct MitM attacks. To prevent this type of attack, you plan to implement a security feature in the mobile app. What should this feature accomplish?",
             options: ["It should require users to change their password every 30 days.", "It should require two-factor authentication for user logins.", "It should prevent the app from connecting to any unencrypted Wi-Fi networks.", "It should prevent the app from communicating over a network if it detects a rogue access point."],
-            answer: ""
+            answer: "D. It should prevent the app from communicating over a network if it detects a rogue access point."
         },
         {
             question: "An organization has been experiencing intrusion attempts despite deploying an Intrusion Detection System (IDS) and Firewalls. As a Certified Ethical Hacker, you are asked to reinforce the intrusion detection process and recommend a better rule-based approach. The IDS uses Snort rules and the new recommended tool should be able to complement it. You suggest using YARA rules with an additional tool for rule generation. Which of the following tools would be the best choice for this purpose and why?",
-            options: ["yarGen - Because it generates YARA rules from strings identified in malware files while remnoving strings that also appear in goodware files", "Koodous - Because it combines social networking with antivirus signatures and YARA rules to detect malware", "AutoYara - Because it automates the generation of YARA rules from a set of malicious and benign files", "YaraRET - Because it helps in reverse engineering Trojans to generate YARA rules"],
-            answer: ""
+            options: ["yarGen - Because it generates YARA rules from strings identified in malware files while removing strings that also appear in goodware files", "Koodous - Because it combines social networking with antivirus signatures and YARA rules to detect malware", "AutoYara - Because it automates the generation of YARA rules from a set of malicious and benign files", "YaraRET - Because it helps in reverse engineering Trojans to generate YARA rules"],
+            answer: "A. yarGen - Because it generates YARA rules from strings identified in malware files while removing strings that also appear in goodware files"
         },
         {
             question: `Consider a hypothetical situation where an attacker, known for his proficiency in SQL Injection attacks, is targeting your web server. This adversary meticulously crafts 'q' malicious SQL queries, each inducing a delay of 'd' seconds in the server response. This delay in response is an indicator of a potential attack. If the total delay, represented by the product 'q*d', crosses a defined threshold 'T', an alert is activated in your security system. Furthermore, it is observed that the attacker prefers prime numbers for 'q', and 'd'follows a pattern in the Fibonacci sequence. Now, consider 'd=13' seconds (a Fibonacci number) and various values of 'q' (a prime number) and T. Which among the following scenarios will most likely trigger an alert?`,
-            options: ["q=11, T=150: Here, the total delay induced by the attacker ('q*d' = 143 seconds) does not surpass the threshold, so the security system remains dormant", "q=19, T=260: Despite the attacker's increased effort, the total delay ('q'd' = 247 seconds) does not exceed the threshold, thus no alert is triggered", "m=13, T=180: In this case, the total delay caused by the attacker ('q*d' = 169 seconds) breaches the threshold, likely leading to the triggering of a security alert", "q=17, T=220: Even though the attacker increases 'q' the total delay ('q*d' = 221 seconds) just surpasses the threshold, possibly activating an alert"],
-            answer: ""
+            options: ["q=11, T=150: Here, the total delay induced by the attacker ('q*d' = 143 seconds) does not surpass the threshold, so the security system remains dormant", "q=19, T=260: Despite the attacker's increased effort, the total delay ('q'd' = 247 seconds) does not exceed the threshold, thus no alert is triggered", "q=13, T=180: In this case, the total delay caused by the attacker ('q*d' = 169 seconds) breaches the threshold, likely leading to the triggering of a security alert", "q=17, T=220: Even though the attacker increases 'q' the total delay ('q*d' = 221 seconds) just surpasses the threshold, possibly activating an alert"],
+            answer: "D. q=17, T=220: Even though the attacker increases 'q' the total delay ('q*d' = 221 seconds) just surpasses the threshold, possibly activating an alert"
         },
         {
             question: "A large e-commerce organization is planning to implement a vulnerability assessment solution to enhance its security posture. They require a solution that imitates the outside view of attackers, performs well-organized inference-based testing, scans automatically against continuously updated databases, and supports multiple networks. Given these requirements, which type of vulnerability assessment solution would be most appropriate?",
             options: ["Service-based solution offered by an auditing firm", "Inference-based assessment solution", "Tree-based assessment approach", "Product-based solution installed on a private network"],
-            answer: ""
+            answer: "A. Service-based solution offered by an auditing firm"
         },
         {
             question: "As a cybersecurity consultant for SafePath Corp, you have been tasked with implementing a system for secure email communication. The key requirement is to ensure both confidentiality and non-repudiation. While considering various encryption methods, you are inclined towards using a combination of symmetric and asymmetric cryptography. However, you are unsure which cryptographic technique would best serve the purpose. Which of the following options would you choose to meet these requirements?",
             options: ["Apply asymmetric encryption with RSA and use the private key for signing.", "Use the Diffie-Hellman protocol for key exchange and encryption.", "Use symmetric encryption with the AES algorithm.", "Apply asymmetric encryption with RSA and use the public key for encryption."],
-            answer: ""
+            answer: "A. Apply asymmetric encryption with RSA and use the private key for signing."
         },
         {
             question: "In your cybersecurity class, you are learning about common security risks associated with web servers. One topic that comes up is the risk posed by using default server settings. Why is using default settings on a web server considered a security risk, and what would be the best initial step to mitigate this risk?",
             options: ["Default settings reveal server software type; change these settings", "Default settings cause server malfunctions; simplify the settings", "Default settings allow unlimited login attempts; setup account lockout", "Default settings enable auto-updates; disable and manually patch"],
-            answer: ""
+            answer: "A. Default settings reveal server software type; change these settings"
         },
         {
             question: "During your summer internship at a tech company, you have been asked to review the security settings of their web server. While inspecting, you notice the server reveals detailed error messages to users, inciuding database query errors and internal server errors. As a cybersecurity beginner, what is your understanding of this setting, and how would you advise the company?",
             options: ["Suppress detailed error messages, as they can expose sensitive information", "Retain the setting as it aids in troubleshooting user issues", "Increase the frequency of automated server backups", "Implement stronger encryption to secure the error messages"],
-            answer: ""
+            answer: "A. Suppress detailed error messages, as they can expose sensitive information"
         },
         {
             question: "As the Chief Information Security Officer (CISO) at a large university, you are responsible for the security of a campus-wide Wi-Fi network that serves thousands of students, faculty, and staff. Recently, there has been a rise in reports of unauthorized network access, and you suspect that some users are sharing their login credentials. You are considering deploying an additional layer of security that could effectively mitigate this issue. What would be the most suitable measure to implement in this context?",
             options: ["Deploy a VPN for the entire campus", "Enforce a policy of regularly changing Wi-Fi passwords", "Implement 802.1X authentication", "Implement network segmentation"],
-            answer: ""
+            answer: "C. Implement 802.1X authentication"
         },
         {
             question: "An ethical hacker is hired to conduct a comprehensive network scan of a large organization that strongly suspects potential intrusions into their internal systems. The hacker decides to employ a combination of scanning tools to obtain a detailed understanding of the network. Which sequence of actions would provide the most comprehensive information about the network's status?",
             options: ["Initiate with Nmap for a ping sweep, then use Metasploit to scan for open ports and services, and finally use Hping3 to perform remote OS fingerprinting", "Begin with NetScanTools Pro for a general network scan, then use Nmap for OS detection and version detection, and finally perform an SYN flooding with Hping3", "Start with Hping3 for a UDP scan on random ports, then use Nmap for a version detection scan, and finally use Metasploit to exploit detected vulnerabilities", "Use Hping3 for an ICMP ping scan on the entire subnet, then use Nmap for a SYN scan on identified active hosts, and finally use Metasploit to exploit identified vulnerabilities"],
-            answer: ""
+            answer: "D. Use Hping3 for an ICMP ping scan on the entire subnet, then use Nmap for a SYN scan on identified active hosts, and finally use Metasploit to exploit identified vulnerabilities"
         },
         {
             question: "As a cybersecurity consultant, you are working with a client who wants to migrate their data to a Software as a Service (SaaS) cloud environment. They are particularly concerned about maintaining the privacy of their sensitive data, even from the cloud service provider. Which of the following strategies would best ensure the privacy of their data in the SaaS environment?",
             options: ["Implement a Virtual Private Network (VPN) for accessing the SaaS applications.", "Rely on the cloud service provider's built-in security features.", "Encrypt the data client-side before uploading to the SaaS environment and manage encryption keys independently.", "Use multi-factor authentication for all user accounts accessing the SaaS applications."],
-            answer: ""
+            answer: "C. Encrypt the data client-side before uploading to the SaaS environment and manage encryption keys independently."
         },
         {
             question: "A cybersecurity analyst in an organization is using the Common Vulnerability Scoring System to assess and prioritize identified vulnerabilities in their IT infrastructure. They encountered a vulnerability with a base metric score of 7, a temporal metric score of 8, and an environmental metric score of 5. Which statement best describes this scenario?",
             options: ["The vulnerability has an overall high severity with a diminishing likelihood of exploitability over time, but it is less impactful in their specific environment", "The vulnerability has an overall high severity, the likelihood of exploitability is increasing over time, and it has a mediumn impact in their specific environment", "The vulnerability has a medium severity with a diminishing likelihood of exploitability over time, but a significant impact in their specific environment", "The vulnerability has a medium severity with a high likelihood of exploitability over time and a considerable impact in their specific environment"],
-            answer: ""
+            answer: "B. The vulnerability has an overall high severity, the likelihood of exploitability is increasing over time, and it has a mediumn impact in their specific environment"
         },
         {
             question: "Your company suspects a potential security breach and has hired you as a Certified Ethical Hacker to investigate. You discover evidence of footprinting through search engines and advanced Google hacking techniques. The attacker utilized Google search operators to extract sensitive information. You further notice queries that indicate the use of the Google Hacking Database (GHDB) with an emphasis on VPN footprinting. Which of the following Google advanced search operators would be the LEAST useful in providing the attacker with sensitive VPN-related Information?",
             options: ["location: This operator finds information for a specific location", "link: This operator searches websites or pages that contain links to the specified website or page", "inurl: This operator restricts the results to only the pages containing the specified word in the URL", "intitle: This operator restricts results to only the pages containing the specified term in the title"],
-            answer: ""
+            answer: "A. location: This operator finds information for a specific location"
         },
         {
             question: "You work as a cloud security specialist at SkyNet Solutions. One of your clients is a healthcare organization that plans to migrate its electronic heaith record (EHR) system to the cloud. This system contains highly sensitive personal and medical data. As part of your job, you need to ensure the security and privacy of this data while it is being transferred and stored in the cloud. You recommend that data should be encrypted during transit and at rest. However, you also need to ensure that even if a cloud service provider(CSP) has access to encrypted data, they should not be able to decrypt it. Which of the following would be the most suitable strategy to meet this requirement?",
