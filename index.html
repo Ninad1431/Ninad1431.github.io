@@ -76,7 +76,7 @@
     {
             question: "As a cybersecurity professional, you are responsible for securing a high-traffic web application that uses MySQL as its backend database. Recently, there has been a surge of unauthorized login attempts, and you suspect that a seasoned black-hat hacker is behind them. This hacker has shown proficiency in SQL Injection and appears to be using the 'UNION' SQL keyword to trick the login process into returning additional data. However, your application's security measures include filtering special characters in user inputs, a method usually effective against such attacks. In this challenging environment, if the hacker still intends to exploit this SQL Injection vulnerability, which strategy is he most likely to employ?",
             options: ["The hacker tries to manipulate the 'UNION' keyword in such a way that it triggers a database error potentially revealing valuable information about the database's structure", "The hacker alters his approach and injects a 'DROP TABLE' statement, a move that could potentially lead to the loss of vital data stored in the application's database", "The hacker attempts to bypass the special character filter by encoding his malicious input, which could potentially enable him to successfully inject damaging SQL queries", "The hacker switches tactics and resorts to a 'time-based blind' SQL Injection attack, which would force the application to delay its response, thereby revealing information based on the duration of the delay"],
-            answer: ""
+            answer: "C. The hacker attempts to bypass the special character filter by encoding his malicious input, which could potentially enable him to successfully inject damaging SQL queries"
         },
         {
             question: "As an IT Security Analyst, you've been asked to review the security measures of an e-commerce website that relies on a SQL database for storing sensitive customer data. Recently, an anonymous tip has alerted you to a possible threat: a seasoned hacker who specializes in SQL Injection attacks may be targeting your system. The site already employs input validation measures to prevent basic injection attacks, and it blocks any user inputs containing suspicious patterns. However, this hacker is known to use advanced SQL Injection techniques. Given this situation, which of the following strategies would the hacker most likely adopt to bypass your security measures?",
@@ -86,12 +86,12 @@
         {
             question: "A large multinational corporation is in the process of evaluating its security infrastructure to identify potential vulnerabilities. After a comprehensive analysis, they found multiple areas of concern, including time of check/time of use (TOC/TOU) errors, improper input handling, and poor patch management. Which of the following approaches will best help the organization mitigate the vulnerability associated with TOC/TOU errors?",
             options: ["Implementing stronger encryption algorithms for all data transfers", "Ensuring atomicity of operations between checking and using data resources", "Frequently updating firewall configurations to prevent intrusion attempts", "Regular patching of servers, firmware, operating system, and applications"],
-            answer: ""
+            answer: "B. Ensuring atomicity of operations between checking and using data resources"
         },
         {
             question: "XYZ company recently discovered a potential vulnerability on their network, originating from misconfigurations. It was found that some of their host servers had enabled debugging functions and unknown users were granted administrative permissions. As a Certified Ethical Hacker, what would be the most potent risk associated with this misconfiguration? ",
             options: ["An attacker may carry out a Denial-of-Service assault draining the resources of the server in the process", "An attacker may be able to inject a malicious DLL into the current running protess", "Weak encryption might be allowing man-in-the-middle attacks, leading to data tampering", "Unauthorized users may perform privilege escalation using unnecessarily created accounts"],
-            answer: ""
+            answer: "D. Unauthorized users may perform privilege escalation using unnecessarily created accounts"
         },
         {
             question: `In the process of implementing a network vulnerability assessment strategy for a tech company, the security analyst is confronted with the following scenarios: <br>
@@ -106,32 +106,32 @@
         {
             question: "You are a cybersecurity consultant at SecureloT Inc. A manufacturing company has contracted you to strengthen the security of their Industrial loT (IIoT) devices used in their operational technology (OT)environment. They are concerned about potential attacks that could disrupt their production lines and compromise safety. They have an advanced firewall system in place, but you know this alone is not enough. Which of the following measures should you suggest to provide comprehensive protection of their lloT devices?",
             options: ["Rely on the existing firewall and install antivirus software on each IoT device", "Implement network segmentation to separate lloT devices from rest of the network", "Use the same encryption standards for lloT devices as for IT devices", "Increase the frequency of changing passwords on all lloT devices."],
-            answer: ""
+            answer: "B. Implement network segmentation to separate lloT devices from rest of the network"
         },
         {
             question: "You, as a cyber security expert, have been brought in to analyze a potential cryptographic vuinerability in an international banking system. The system uses RSA encryption with key sizes of 'n' bits for securing transaction data. The key generation process involves finding two large primes 'p' and 'q', such that 'n=p*q'. Given 'p=150' and 'q=200', the security level is deemed to be sufficient for current threats. The system can handle a decryption process with a time complexity of O(n^1.5) without compromising performance. However, an attacker using Shor's algorithm on a quantum computer could potentially crack RSA with a time complexity of O(log n)^3. Assuming 'n=30000' and variables 'p' and 'q', which scenario will likely maximize the decryption time 'T' for the attacker?",
             options: ["p=140, q=210: Here, 'p' decreases while 'q' increases, which could lead to a decrease in 'n', and thus a reduced complexity for the attacker.", "p=175, q=250: The key size 'n' is adjusted by increasing both 'p and 'q', thereby increasing the complexity of the attacker's decryption process.", "p=160, q=240: A modest increase in both 'p' and 'q' results in a larger key size 'n', increasing the complexity for the attacker.", "p=130, q=230: By decreasing 'p' and increasing 'q', the key size 'n' decreases, reducing the complexity for the attacker."],
-            answer: ""
+            answer: "B. p=175, q=250: The key size 'n' is adjusted by increasing both 'p and 'q', thereby increasing the complexity of the attacker's decryption process."
         },
         {
             question: "In the process of setting up a lab for malware analysis, a cybersecurity analyst is tasked to establish a secure environment using a sheep dip computer. The analyst must prepare the testbed while adhering to best practices. Which of the following steps should the analyst avoid when configuring the environment?",
             options: ["Installing multiple guest operating systems on the virtual machine(s)", "Connecting the system to the production network during the malware analysis", "Simulating Internet services using tools such as INetSim", "Installing malware analysis tools on the guest OS"],
-            answer: ""
+            answer: "B. Connecting the system to the production network during the malware analysis"
         },
         {
             question: "You have been given the responsibility to ensure the security of your school's web server. As a step towards this, you plan to restrict unnecessary services running on the server. In the context of web server security, why is this step considered important?",
             options: ["Unnecessary services could contain vulnerabilities; minimize the attack surface", "Unnecessary services slow down the server; optimize server speed", "Unnecessary services eat up server memory; save memory resources", "Unnecessary services reveal server software; hide software details"],
-            answer: ""
+            answer: "A. Unnecessary services could contain vulnerabilities; minimize the attack surface"
         },
         {
             question: "An ethical hacker has been tasked with assessing the security of a major corporation's network. She suspects the network uses default SNMP community strings. To exploit this, she plans to extract valuable network information using SNMP enumeration. Which tool could best help her to get the information without directly modifying any parameters within the SNMP agent's management information base (MIB)?",
             options: ["OpUtils, are mainly designed for device management and not SNMP enumeration", "Nmap, with a script to retrieve all running SNMP processes and associated ports", "SnmpWalk, with a command to change an OID to a different value", "snmp-check {snmp_enum Module) to gather a wide array of information about the target"],
-            answer: ""
+            answer: "D. snmp-check {snmp_enum Module) to gather a wide array of information about the target"
         },
         {
-            question: "A sophisticated attacker targets your web server with the intent to execute a Denial of Service (DoS) attack. His strategy involves a unique mixture of TCP SYN, UDP, and ICMP floods, using 'r packets per second. Your server, reinforced with advanced security measures, can handle 'h' packets per second before it starts showing signs of strain. If 'r' surpasses 'h', it overwhelms the server, causing it to become unresponsive. In a peculiar pattern, the attacker selects 'r' as a composite number and 'h' as a prime number, making the attack detection more challenging. Considering 'r=2010' and different values for 'h, which of the following scenarios would potentially cause the server to falter?",
+            question: "A sophisticated attacker targets your web server with the intent to execute a Denial of Service (DoS) attack. His strategy involves a unique mixture of TCP SYN, UDP, and ICMP floods, using 'r' packets per second. Your server, reinforced with advanced security measures, can handle 'h' packets per second before it starts showing signs of strain. If 'r' surpasses 'h', it overwhelms the server, causing it to become unresponsive. In a peculiar pattern, the attacker selects 'r' as a composite number and 'h' as a prime number, making the attack detection more challenging. Considering 'r=2010' and different values for 'h, which of the following scenarios would potentially cause the server to falter?",
             options: ["h=1999 (prime): Despite the attacker's packet flood, the server can handle these requests, remaining responsive", "h=1993 (prime): Despite being less than 'r', the server's prime number capacity keeps it barely operational, but the risk of falling is imminent", "h=1987 {prime): The attacker's packet rate exceeds the server's capacity, causing potential unresponsiveness", "h=2003 {prime): The server can manage more packets than the attacker is sending, hence it stays operational"],
-            answer: ""
+            answer: "C. h=1987 {prime): The attacker's packet rate exceeds the server's capacity, causing potential unresponsiveness"
         },
         {
             question: "An ethical hacker is testing the security of a website's database system against SQL Injection attacks. They discover that the IDS has a strong signature detection mechanism to detect typical SQL injection patterns. Which evasion technique can be most effectively used to bypass the IDS signature detection while performing a SQL Injection attack?",
@@ -141,62 +141,52 @@
         {
             question: "You are an ethical hacker tasked with conducting an enumeration of a company's network. Given a Windows system with NetBIOS enabled, port 139 open, and file and printer sharing active, you are about to run some nbtstat commands to enumerate NetBIOS names. The company uses IPv6 for its network. Which of the following actions should you take next?",
             options: ["Use nbtstat -a followed by the IPv6 address of the target machine", "Switch to an enumeration tool that supports IPv6", "Use nbtstat -c to get the contents of the NetBIOS name cache", "Utilize Nmap Scripting Engine {NSE) for NetBIOS enumeration"],
-            answer: ""
+            answer: "B. Switch to an enumeration tool that supports IPv6"
         },
         {
             question: "An ethical hacker is testing a web application of a financial firm. During the test, a 'Contact Us' form's input field is found to lack proper user input validation, indicating a potential Cross-Site Scripting (XSS) vulnerability. However, the application has a stringent Content Security Policy (CSP) disallowing inline scripts and scripts from external domains but permitting scripts from its own domain. What would be the hacker's next step to confirm the XSS vulnerability?",
             options: ["Inject a benign script inline to the form to see if it executes", "Utilize a script hosted on the application's domain to test the form", "Try to disable the CSP to bypass script restrictions", "Load a script from an external domain to test the vulnerability"],
-            answer: ""
+            answer: "B. Utilize a script hosted on the application's domain to test the form"
         },
         {
             question: "As part of a college project, you have set up a web server for hosting your team's application. Given your interest in cybersecurity, you have taken the lead in securing the server. You are aware that hackers often attempt to exploit server misconfigurations. Which of the following actions would best protect your web server from potential misconfiguration-based attacks?",
             options: ["Performing regular server configuration audits", "Regularly backing up server data", "Implementing a firewall to filter traffic", "Enabling multi-factor authentication for users"],
-            answer: ""
+            answer: "A. Performing regular server configuration audits"
         },
         {
             question: "A malicious user has acquired a Ticket Granting Service from the domain controller using a valid user's Ticket Granting Ticket in a Kerberoasting attack. He exhorted the TGS tickets from memory for offline cracking. But the attacker was stopped before he could complete his attack. The system administrator needs to investigate and remediate the potential breach. What should be the immediate step the system administrator takes?",
             options: ["Change the NTLM password hash used to encrypt the ST", "Perform a system reboot to clear the memory", "Invalidate the TGS the attacker acquired", "Delete the compromised user's account"],
-            answer: ""
+            answer: "C. Invalidate the TGS the attacker acquired"
         },
         {
             question: `In an advanced digital security scenario, a multinational enterprise is being targeted with a complex series of assaults aimed to disrupt operations, manipulate data integrity, and cause serious financial damage. As the Lead Cybersecurity Analyst with CEH and CISSP certifications, your responsibility is to correctly identify the specific type of attack based on the following indicators: <br> <br>The attacks are exploiting a vulnerability in the target system's hardware, inducing misprediction of future instructions in a program's control flow. The attackers are strategically inducing the victim process to speculatively execute instructions sequences that would not have been executed in the absence of the misprediction, leading to subtle side effects. These side effects, which are observable from the shared state, are then utilized to infer the values of in-flight data. <br> <br>What type of attack best describes this scenario?`,
             options: ["Side-Channel Attack", "Privilege Escalation Attack", "Rowhammer Attack", "Watering Hole Attack"],
-            answer: ""
+            answer: "A. Side-Channel Attack"
         },
         {
             question: "During a red team engagement, an ethical hacker is tasked with testing the security measures of an organization's wireless network. The hacker needs to select an appropriate tool to carry out a session hijacking attack. Which of the following tools should the hacker use to effectively perform session hijacking and subsequent security analysis, given that the target wireless network has the Wi-Fi Protected Access-pre-shared key (WPA-PSK) security protocol in place?",
             options: ["FaceNiff", "bettercap", "Hetty", "DroidSheep"],
-            answer: ""
+            answer: "B. bettercap"
         },
         {
             question: "As a junior security analyst for a small business, you are tasked with setting up the company's first wireless network. The company wants to ensure the network is secure from potential attacks. Given that the company's workforce is relatively small and the need for simplicity in managing network security, which of the following measures would you consider a priority to protect the network?",
             options: ["Establish a regular schedule for changing the network password", "Hide the network SSID", "Implement a MAC address whitelist", "Enable WPA2 or WPA3 encryption on the wireless router"],
-            answer: ""
+            answer: "D. Enable WPA2 or WPA3 encryption on the wireless router"
         },
         {
             question: "A large organization is investigating a possible identity theft case where an attacker has created a new identity by combining multiple pieces of information from different victims to open a new bank account. The attacker also managed to receive government benefits using a fraudulent identity. Given the circumstances, which type of identity theft is the organization dealing with?",
             options: ["Identity Cloning and Concealment", "Social Identity Theft", "Synthetic Identity Theft", "Child Identity Theft"],
-            answer: ""
+            answer: "C. Synthetic Identity Theft"
         },
         {
             question: "During a recent vulnerability assessment of a major corporation's IT systems, the security team identified several potential risks. They want to use a vulnerability scoring system to quantify and prioritize these vulnerabilities. They decide to use the Common Vulnerability Scoring System (CVSS). Given the characteristics of the identified vulnerabilities, which of the following statements is the most accurate regarding the metric types used by CVSS to measure these vulnerabilities?",
             options: ["Temnporal metric involves measuring vulnerabilities based on a specific environment or implementation", "Environmental metric involves the features that change during the lifetime of the vulnerability", "Base metric represents the inherent qualities of a vulnerability", "Ternporal metric represents the inherent qualities of a vulnerability"],
-            answer: ""
-        },
-        {
-            question: "A large multinational corporation is in the process of evaluating its security infrastructure to identify potential vulnerabilities. After a comprehensive analysis, they found multiple areas of concern, including time of check/time of use (TOC/TOU) errors, improper input handling, and poor patch management. Which of the following approaches will best help the organization mitigate the vulnerability associated with TOC/TOU errors?",
-            options: ["Implementing stronger encryption algorithms for all data transfers", "Ensuring atomicity of operations between checking and using data resources", "Frequently updating firewall configurations to prevent intrusion attempts", "Regular patching of servers, firmware, operating system, and applications"],
-            answer: ""
+            answer: "C. Base metric represents the inherent qualities of a vulnerability"
         },
         {
             question: `An ethical hacker is testing a web application for possible SQL injection vulnerabilities. He used the input "Bob" for the username and received an error message "Incorrect Syntax near 'Bob'. Unclosed quotation mark after the character string " AND Password='xxx". Based on this information, which type of SQL Injection attack is the ethical hacker most likely trying to perform?`,
             options: ["Tautology-based SQL Injection", "Blind/Inferential SQL Injection", "Error-based SQL Injection", "Union SQL Injection"],
-            answer: ""
-        },
-        {
-            question: "As an IT Security Analyst, you've been asked to review the security measures of an e-commerce website that relies on a SQL database for storing sensitive customer data. Recently, an anonymous tip has alerted you to a possible threat: a seasoned hacker who specializes in SQL Injection attacks may be targeting your system. The site already employs input validation measures to prevent basic injection attacks, and it blocks any user inputs containing suspicious patterns. However, this hacker is known to use advanced SQL Injection techniques. Given this situation, which of the following strategies would the hacker most likely adopt to bypass your security measures?",
-            options: ["The hacker could deploy an 'out-of-band' SQL Injection attack, extracting data via a different communication channel, such as DNS or HTTP requests", "The hacker may try to use SQL commands which are less known and less likely to be blocked by your system's security", "The hacker might employ a 'blind' SQL Injection attack, taking advantage of the application's true or false responses to extract data bit by bit", "The hacker may resort to a DDoS attack instead, attempting to crash the server and thus render the e-commerce site unavailable"],
-            answer: ""
+            answer: "C. Error-based SQL Injection"
         },
         {
             question: "You are a cybersecurity consultant for a smart city project. The project involves deploying a vast network of loT devices for public utilities like traffic control, water supply, and power grid management. The city administration is concerned about the possibility of a Distributed Denial of Service (DDoS) attack crippling these critical services. They have asked you for advice on how to prevent such an attack. What would be your primary recommendation?",
