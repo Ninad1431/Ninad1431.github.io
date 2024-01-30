@@ -14,7 +14,7 @@
         }
 
         #quiz-container {
-            max-width: 600px;
+            max-width: 850px;
             margin: auto;
         }
 
@@ -28,7 +28,7 @@
 
         .options label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 10px; /* Increased spacing between options */
             color: #ecf0f1; /* Light text color for options */
         }
 
@@ -36,6 +36,7 @@
             cursor: pointer;
             color: #3498db;
             text-decoration: underline;
+            margin-top: 10px; /* Increased spacing between question and dropdown */
         }
 
         .dropdown-content {
@@ -47,40 +48,342 @@
             color: #ecf0f1; /* Light text color for dropdown */
         }
         #evaluate-btn {
-            display: block;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #3498db;
-            color: #ecf0f1;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+    display: block;
+    margin: 20px auto; /* Center the button horizontally with top margin */
+    padding: 10px;
+    background-color: #3498db;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+        h1 {
+            text-align: center;
+            color: #3498db;
         }
+
     </style>
 </head>
 <body>
-
+<h1>CEH Latest Dumps</h1>
 <div id="quiz-container"></div>
 <div id="quiz-container"></div>
 <button id="evaluate-btn" onclick="evaluateQuiz()">Evaluate</button>
 <script>
     // Sample questions
     const questions = [
-        {
-            question: "What is the capital of India?",
-            options: ["New Delhi", "Kolkata", "Agra", "Mumbai"],
-            answer: "A. New Delhi"
+    {
+            question: "As a cybersecurity professional, you are responsible for securing a high-traffic web application that uses MySQL as its backend database. Recently, there has been a surge of unauthorized login attempts, and you suspect that a seasoned black-hat hacker is behind them. This hacker has shown proficiency in SQL Injection and appears to be using the 'UNION' SQL keyword to trick the login process into returning additional data. However, your application's security measures include filtering special characters in user inputs, a method usually effective against such attacks. In this challenging environment, if the hacker still intends to exploit this SQL Injection vulnerability, which strategy is he most likely to employ?",
+            options: ["The hacker tries to manipulate the 'UNION' keyword in such a way that it triggers a database error potentially revealing valuable information about the database's structure", "The hacker alters his approach and injects a 'DROP TABLE' statement, a move that could potentially lead to the loss of vital data stored in the application's database", "The hacker attempts to bypass the special character filter by encoding his malicious input, which could potentially enable him to successfully inject damaging SQL queries", "The hacker switches tactics and resorts to a 'time-based blind' SQL Injection attack, which would force the application to delay its response, thereby revealing information based on the duration of the delay"],
+            answer: ""
         },
         {
-            question: "Which planet is known as the Red Planet?",
-            options: ["Earth", "Mars", "Jupiter", "Venus"],
-            answer: "B. Mars"
+            question: "As an IT Security Analyst, you've been asked to review the security measures of an e-commerce website that relies on a SQL database for storing sensitive customer data. Recently, an anonymous tip has alerted you to a possible threat: a seasoned hacker who specializes in SQL Injection attacks may be targeting your system. The site already employs input validation measures to prevent basic injection attacks, and it blocks any user inputs containing suspicious patterns. However, this hacker is known to use advanced SQL Injection techniques. Given this situation, which of the following strategies would the hacker most likely adopt to bypass your security measures?",
+            options: ["The hacker could deploy an 'out-of-band' SQL Injection attack, extracting data via a different communication channel, such as DNS or HTTP requests", "The hacker may try to use SQL commands which are less known and less likely to be blocked by your system's security", "The hacker might employ a 'blind' SQL Injection attack, taking advantage of the application's true or false responses to extract data bit by bit", "The hacker may resort to a DDoS attack instead, attempting to crash the server and thus render the e-commerce site unavailable"],
+            answer: ""
         },
         {
-            question: "Who wrote 'Romeo and Juliet'?",
-            options: ["Charles Dickens", "Jane Austen", "William Shakespeare", "Leo Tolstoy"],
-            answer: "C. William Shakespeare"
+            question: "A large multinational corporation is in the process of evaluating its security infrastructure to identify potential vulnerabilities. After a comprehensive analysis, they found multiple areas of concern, including time of check/time of use (TOC/TOU) errors, improper input handling, and poor patch management. Which of the following approaches will best help the organization mitigate the vulnerability associated with TOC/TOU errors?",
+            options: ["Implementing stronger encryption algorithms for all data transfers", "Ensuring atomicity of operations between checking and using data resources", "Frequently updating firewall configurations to prevent intrusion attempts", "Regular patching of servers, firmware, operating system, and applications"],
+            answer: ""
         },
+        {
+            question: "XYZ company recently discovered a potential vulnerability on their network, originating from misconfigurations. It was found that some of their host servers had enabled debugging functions and unknown users were granted administrative permissions. As a Certified Ethical Hacker, what would be the most potent risk associated with this misconfiguration? ",
+            options: ["An attacker may carry out a Denial-of-Service assault draining the resources of the server in the process", "An attacker may be able to inject a malicious DLL into the current running protess", "Weak encryption might be allowing man-in-the-middle attacks, leading to data tampering", "Unauthorized users may perform privilege escalation using unnecessarily created accounts"],
+            answer: ""
+        },
+        {
+            question: `In the process of implementing a network vulnerability assessment strategy for a tech company, the security analyst is confronted with the following scenarios: <br>
+            1) A legacy application is discovered on the network, which no longer receives updates from the vendor.<br>
+            2) Several systems in the network are found running outdated versions of web browsers prone to distributed attacks.<br>
+            3) The network firewall has been configured using default settings and passwords.<br>
+            4) Certain TCP/IP protocols used in the organization are inherently insecure.<br>
+            The security analyst decides to use vulnerability scanning software. Which of the following limitations of vulnerability assessment should the analyst be most cautious about in this context?`,
+            options: ["Vulnerability scanning software is not immune to software engineering flaws that might lead to serious vulnerabilities being missed", "Vulnerability scanning software is limited in its ability to detect vulnerabilities at a given point in time", "Vulnerability scanning software is limited in its ability to perform live tests on web applications to detect errors or unexpected behavior", "Vulnerability scanning software cannot define the impact of an identified vulnerability on different business operations"],
+            answer: ""
+        },
+        {
+            question: "You are a cybersecurity consultant at SecureloT Inc. A manufacturing company has contracted you to strengthen the security of their Industrial loT (IIoT) devices used in their operational technology (OT)environment. They are concerned about potential attacks that could disrupt their production lines and compromise safety. They have an advanced firewall system in place, but you know this alone is not enough. Which of the following measures should you suggest to provide comprehensive protection of their lloT devices?",
+            options: ["Rely on the existing firewall and install antivirus software on each IoT device", "Implement network segmentation to separate lloT devices from rest of the network", "Use the same encryption standards for lloT devices as for IT devices", "Increase the frequency of changing passwords on all lloT devices."],
+            answer: ""
+        },
+        {
+            question: "You, as a cyber security expert, have been brought in to analyze a potential cryptographic vuinerability in an international banking system. The system uses RSA encryption with key sizes of 'n' bits for securing transaction data. The key generation process involves finding two large primes 'p' and 'q', such that 'n=p*q'. Given 'p=150' and 'q=200', the security level is deemed to be sufficient for current threats. The system can handle a decryption process with a time complexity of O(n^1.5) without compromising performance. However, an attacker using Shor's algorithm on a quantum computer could potentially crack RSA with a time complexity of O(log n)^3. Assuming 'n=30000' and variables 'p' and 'q', which scenario will likely maximize the decryption time 'T' for the attacker?",
+            options: ["p=140, q=210: Here, 'p' decreases while 'q' increases, which could lead to a decrease in 'n', and thus a reduced complexity for the attacker.", "p=175, q=250: The key size 'n' is adjusted by increasing both 'p and 'q', thereby increasing the complexity of the attacker's decryption process.", "p=160, q=240: A modest increase in both 'p' and 'q' results in a larger key size 'n', increasing the complexity for the attacker.", "p=130, q=230: By decreasing 'p' and increasing 'q', the key size 'n' decreases, reducing the complexity for the attacker."],
+            answer: ""
+        },
+        {
+            question: "In the process of setting up a lab for malware analysis, a cybersecurity analyst is tasked to establish a secure environment using a sheep dip computer. The analyst must prepare the testbed while adhering to best practices. Which of the following steps should the analyst avoid when configuring the environment?",
+            options: ["Installing multiple guest operating systems on the virtual machine(s)", "Connecting the system to the production network during the malware analysis", "Simulating Internet services using tools such as INetSim", "Installing malware analysis tools on the guest OS"],
+            answer: ""
+        },
+        {
+            question: "You have been given the responsibility to ensure the security of your school's web server. As a step towards this, you plan to restrict unnecessary services running on the server. In the context of web server security, why is this step considered important?",
+            options: ["Unnecessary services could contain vulnerabilities; minimize the attack surface", "Unnecessary services slow down the server; optimize server speed", "Unnecessary services eat up server memory; save memory resources", "Unnecessary services reveal server software; hide software details"],
+            answer: ""
+        },
+        {
+            question: "An ethical hacker has been tasked with assessing the security of a major corporation's network. She suspects the network uses default SNMP community strings. To exploit this, she plans to extract valuable network information using SNMP enumeration. Which tool could best help her to get the information without directly modifying any parameters within the SNMP agent's management information base (MIB)?",
+            options: ["OpUtils, are mainly designed for device management and not SNMP enumeration", "Nmap, with a script to retrieve all running SNMP processes and associated ports", "SnmpWalk, with a command to change an OID to a different value", "snmp-check {snmp_enum Module) to gather a wide array of information about the target"],
+            answer: ""
+        },
+        {
+            question: "A sophisticated attacker targets your web server with the intent to execute a Denial of Service (DoS) attack. His strategy involves a unique mixture of TCP SYN, UDP, and ICMP floods, using 'r packets per second. Your server, reinforced with advanced security measures, can handle 'h' packets per second before it starts showing signs of strain. If 'r' surpasses 'h', it overwhelms the server, causing it to become unresponsive. In a peculiar pattern, the attacker selects 'r' as a composite number and 'h' as a prime number, making the attack detection more challenging. Considering 'r=2010' and different values for 'h, which of the following scenarios would potentially cause the server to falter?",
+            options: ["h=1999 (prime): Despite the attacker's packet flood, the server can handle these requests, remaining responsive", "h=1993 (prime): Despite being less than 'r', the server's prime number capacity keeps it barely operational, but the risk of falling is imminent", "h=1987 {prime): The attacker's packet rate exceeds the server's capacity, causing potential unresponsiveness", "h=2003 {prime): The server can manage more packets than the attacker is sending, hence it stays operational"],
+            answer: ""
+        },
+        {
+            question: "An ethical hacker is testing the security of a website's database system against SQL Injection attacks. They discover that the IDS has a strong signature detection mechanism to detect typical SQL injection patterns. Which evasion technique can be most effectively used to bypass the IDS signature detection while performing a SQL Injection attack?",
+            options: ["Employ IP fragmentation to obscure the attack payload", "Leverage string concatenation to break identifiable keywords", "Implemnent case variation by altering the case of SQL statements", "Use Hex encoding to represent the SQL query string"],
+            answer: ""
+        },
+        {
+            question: "You are an ethical hacker tasked with conducting an enumeration of a company's network. Given a Windows system with NetBIOS enabled, port 139 open, and file and printer sharing active, you are about to run some nbtstat commands to enumerate NetBIOS names. The company uses IPv6 for its network. Which of the following actions should you take next?",
+            options: ["Use nbtstat -a followed by the IPv6 address of the target machine", "Switch to an enumeration tool that supports IPv6", "Use nbtstat -c to get the contents of the NetBIOS name cache", "Utilize Nmap Scripting Engine {NSE) for NetBIOS enumeration"],
+            answer: ""
+        },
+        {
+            question: "An ethical hacker is testing a web application of a financial firm. During the test, a 'Contact Us' form's input field is found to lack proper user input validation, indicating a potential Cross-Site Scripting (XSS) vulnerability. However, the application has a stringent Content Security Policy (CSP) disallowing inline scripts and scripts from external domains but permitting scripts from its own domain. What would be the hacker's next step to confirm the XSS vulnerability?",
+            options: ["Inject a benign script inline to the form to see if it executes", "Utilize a script hosted on the application's domain to test the form", "Try to disable the CSP to bypass script restrictions", "Load a script from an external domain to test the vulnerability"],
+            answer: ""
+        },
+        {
+            question: "As part of a college project, you have set up a web server for hosting your team's application. Given your interest in cybersecurity, you have taken the lead in securing the server. You are aware that hackers often attempt to exploit server misconfigurations. Which of the following actions would best protect your web server from potential misconfiguration-based attacks?",
+            options: ["Performing regular server configuration audits", "Regularly backing up server data", "Implementing a firewall to filter traffic", "Enabling multi-factor authentication for users"],
+            answer: ""
+        },
+        {
+            question: "A malicious user has acquired a Ticket Granting Service from the domain controller using a valid user's Ticket Granting Ticket in a Kerberoasting attack. He exhorted the TGS tickets from memory for offline cracking. But the attacker was stopped before he could complete his attack. The system administrator needs to investigate and remediate the potential breach. What should be the immediate step the system administrator takes?",
+            options: ["Change the NTLM password hash used to encrypt the ST", "Perform a system reboot to clear the memory", "Invalidate the TGS the attacker acquired", "Delete the compromised user's account"],
+            answer: ""
+        },
+        {
+            question: `In an advanced digital security scenario, a multinational enterprise is being targeted with a complex series of assaults aimed to disrupt operations, manipulate data integrity, and cause serious financial damage. As the Lead Cybersecurity Analyst with CEH and CISSP certifications, your responsibility is to correctly identify the specific type of attack based on the following indicators: <br> <br>The attacks are exploiting a vulnerability in the target system's hardware, inducing misprediction of future instructions in a program's control flow. The attackers are strategically inducing the victim process to speculatively execute instructions sequences that would not have been executed in the absence of the misprediction, leading to subtle side effects. These side effects, which are observable from the shared state, are then utilized to infer the values of in-flight data. <br> <br>What type of attack best describes this scenario?`,
+            options: ["Side-Channel Attack", "Privilege Escalation Attack", "Rowhammer Attack", "Watering Hole Attack"],
+            answer: ""
+        },
+        {
+            question: "During a red team engagement, an ethical hacker is tasked with testing the security measures of an organization's wireless network. The hacker needs to select an appropriate tool to carry out a session hijacking attack. Which of the following tools should the hacker use to effectively perform session hijacking and subsequent security analysis, given that the target wireless network has the Wi-Fi Protected Access-pre-shared key (WPA-PSK) security protocol in place?",
+            options: ["FaceNiff", "bettercap", "Hetty", "DroidSheep"],
+            answer: ""
+        },
+        {
+            question: "As a junior security analyst for a small business, you are tasked with setting up the company's first wireless network. The company wants to ensure the network is secure from potential attacks. Given that the company's workforce is relatively small and the need for simplicity in managing network security, which of the following measures would you consider a priority to protect the network?",
+            options: ["Establish a regular schedule for changing the network password", "Hide the network SSID", "Implement a MAC address whitelist", "Enable WPA2 or WPA3 encryption on the wireless router"],
+            answer: ""
+        },
+        {
+            question: "A large organization is investigating a possible identity theft case where an attacker has created a new identity by combining multiple pieces of information from different victims to open a new bank account. The attacker also managed to receive government benefits using a fraudulent identity. Given the circumstances, which type of identity theft is the organization dealing with?",
+            options: ["Identity Cloning and Concealment", "Social Identity Theft", "Synthetic Identity Theft", "Child Identity Theft"],
+            answer: ""
+        },
+        {
+            question: "During a recent vulnerability assessment of a major corporation's IT systems, the security team identified several potential risks. They want to use a vulnerability scoring system to quantify and prioritize these vulnerabilities. They decide to use the Common Vulnerability Scoring System (CVSS). Given the characteristics of the identified vulnerabilities, which of the following statements is the most accurate regarding the metric types used by CVSS to measure these vulnerabilities?",
+            options: ["Temnporal metric involves measuring vulnerabilities based on a specific environment or implementation", "Environmental metric involves the features that change during the lifetime of the vulnerability", "Base metric represents the inherent qualities of a vulnerability", "Ternporal metric represents the inherent qualities of a vulnerability"],
+            answer: ""
+        },
+        {
+            question: "A large multinational corporation is in the process of evaluating its security infrastructure to identify potential vulnerabilities. After a comprehensive analysis, they found multiple areas of concern, including time of check/time of use (TOC/TOU) errors, improper input handling, and poor patch management. Which of the following approaches will best help the organization mitigate the vulnerability associated with TOC/TOU errors?",
+            options: ["Implementing stronger encryption algorithms for all data transfers", "Ensuring atomicity of operations between checking and using data resources", "Frequently updating firewall configurations to prevent intrusion attempts", "Regular patching of servers, firmware, operating system, and applications"],
+            answer: ""
+        },
+        {
+            question: `An ethical hacker is testing a web application for possible SQL injection vulnerabilities. He used the input "Bob" for the username and received an error message "Incorrect Syntax near 'Bob'. Unclosed quotation mark after the character string " AND Password='xxx". Based on this information, which type of SQL Injection attack is the ethical hacker most likely trying to perform?`,
+            options: ["Tautology-based SQL Injection", "Blind/Inferential SQL Injection", "Error-based SQL Injection", "Union SQL Injection"],
+            answer: ""
+        },
+        {
+            question: "As an IT Security Analyst, you've been asked to review the security measures of an e-commerce website that relies on a SQL database for storing sensitive customer data. Recently, an anonymous tip has alerted you to a possible threat: a seasoned hacker who specializes in SQL Injection attacks may be targeting your system. The site already employs input validation measures to prevent basic injection attacks, and it blocks any user inputs containing suspicious patterns. However, this hacker is known to use advanced SQL Injection techniques. Given this situation, which of the following strategies would the hacker most likely adopt to bypass your security measures?",
+            options: ["The hacker could deploy an 'out-of-band' SQL Injection attack, extracting data via a different communication channel, such as DNS or HTTP requests", "The hacker may try to use SQL commands which are less known and less likely to be blocked by your system's security", "The hacker might employ a 'blind' SQL Injection attack, taking advantage of the application's true or false responses to extract data bit by bit", "The hacker may resort to a DDoS attack instead, attempting to crash the server and thus render the e-commerce site unavailable"],
+            answer: ""
+        },
+        {
+            question: "You are a cybersecurity consultant for a smart city project. The project involves deploying a vast network of loT devices for public utilities like traffic control, water supply, and power grid management. The city administration is concerned about the possibility of a Distributed Denial of Service (DDoS) attack crippling these critical services. They have asked you for advice on how to prevent such an attack. What would be your primary recommendation?",
+            options: ["Deploy network intrusion detection systems (IDS) across the loT network", "Establish strong, unique passwords for each loT device.", "Implement regular firmware updates for all loT devices.", "Implement IP address whitelisting for all loT devices."],
+            answer: ""
+        },
+        {
+            question: "A large enterprise has been experiencing sporadic system crashes and instability, resulting in limited access to its web services. The security team suspects it could be a result of a Denial of Service (Dos) attack. A significant increase in traffic was noticed in the network logs, with patterns suggesting packet sizes exceeding the prescribed size limit. Which among the following Dos attack techniques best describes this scenario?",
+            options: ["Pulse wave attack", "Smurf attack", "Ping of Death attack", "UDP flood attack"],
+            answer: ""
+        },
+        {
+            question: "During a penetration testing assignment, a Certified Ethical Hacker (CEH) used a set of scanning tools to create a profile of the target organization. The CEH wanted to scan for live hosts, open ports, and services on a target network. He used Nmap for network inventory and Hping3 for network security auditing. However he wanted to spoof IP addresses for anonymity during probing. Which command should the CEH use to perform this task?",
+            options: ["Hping3 -S 192.168.1.1 -a 192.168.1.254 -p 22 --flood", "Nmap -sS -Pn -n -vvv --packet-trace -p- --script discovery -T4", "Hping3 -2 10.0.0.25 -p 80", "Hping3 -1 10.0.0.25 --ICMP"],
+            answer: ""
+        },
+        {
+            question: "While performing a security audit of a web application, an ethical hacker discovers a potential vulnerability. The application responds to logically incorrect queries with detailed error messages that divulge the underlying database's structure. The ethical hacker decides to exploit this vulnerability further. Which type of SQL Injection attack is the ethical hacker likely to use?",
+            options: ["Blind/Inferential SQL Injection", "Error-based SQL Injection", "In-band SQL Injection", "UNION SQL Injection"],
+            answer: ""
+        },
+        {
+            question: "A network security analyst, while conducting penetration testing, is aiming to identify a service account password using the Kerberos authentication protocol. They have a valid user authentication ticket (TGT) and decided to carry out a Kerberoasting attack. In the scenario described, which of the following steps should the analyst take next?",
+            options: ["Perform a PRobability INfinite Chained Elements (PRINCE) attack", "Carry out a passive wire sniffing operation using Internet packet sniffers", "Extract plaintext passwords, hashes, PIN codes, and Kerberos tickets using a tool like Mimikatz", "Request a service ticket for the service principal name of the target service account"],
+            answer: ""
+        },
+        {
+            question: "A penetration tester is tasked with gathering information about the subdomains of a target organization's website. The tester needs a versatile and efficient solution for the task. Which of the following options would be the most effective method to accomplish this goal?",
+            options: ["Employing a tool like Sublist3r, which is designed to enumerate the subdornains of websites using OSINT", "Utilizing the Harvester tool to extract email addresses related to the target domain using a search engine like Google or Bing", "Analyzing Linkedin profiles to find employees of the target company and their job titles", "Using a people search service, such as Spokeo or Intelius, to gather information about the employees of the target organization"],
+            answer: ""
+        },
+        {
+            question: "You are an ethical hacker contracted to conduct a security audit for a company. During the audit, you discover that the company's wireless network is using WEP encryption. You understand the vulnerabilities associated with WEP and plan to recommend a more secure encryption method. Which of the following would you recommend as a suitable replacement to enhance the security of the company's wireless network?",
+            options: ["WPA2-PSK with AES encryption", "SSID broadcast disabling", "Open System authentication", "MAC address filtering"],
+            answer: ""
+        },
+        {
+            question: "As a cybersecurity analyst at loT Defend, you are working with a large utility company that uses Industrial Control Systems (ICS) in its operational technology (OT) environment. The company has recently integrated loT devices into this environment to enable remote monitoring and control. They want to ensure these devices do not become a weak link in their security posture. To identify potential vulnerabilities in the loT devices, which of the following actions should you recommend as the first step?",
+            options: ["Conduct a vulnerability assessment specifically for the loT devices.", "Use stronger encryption algorithms for data transmission between loT devices.", "Implement network segmentation to isolate loT devices from the rest of the network.", "Install the latest antivirus software on each loT device."],
+            answer: ""
+        },
+        {
+            question: "Sarah, a system administrator, was alerted of potential malicious activity on the network of her company. She discovered a malicious program spread through the instant messenger application used by her team. The attacker had obtained access to one of her teammate's messenger accounts and started sending files across the contact list. Which best describes the attack scenario and what measure could have prevented it?",
+            options: ["Rogue/Decoy Applications; ensuring software is labeled as TRUSTED", "Portable Hardware Media/Removable Devices; disabling Autorun functionality", "Instant Messenger Applications; verifying the sender's identity before opening any files", "Insecure Patch Management; updating application software regularly"],
+            answer: ""
+        },
+        {
+            question: "You are the lead cybersecurity analyst at a multinational corporation that uses a hybrid encryption system to secure inter-departmental communications. The system uses RSA encryption for key exchange and AES for data encryption, taking advantage of the strengths of both asymmetric and symmetric encryption. Each RSA key pair has a size of 'n' bits, with larger keys providing more security at the cost of slower performance. The time complexity of generating an RSA key pair is O(n^2), and AES encryption has a time complexity of O(n). An attacker has developed a quantum algorithm with time complexity O((log n)^2) to crack RSA encryption. Given 'n=4000' and variable 'AES key size', which scenario is likely to provide the best balance of security and performance?",
+            options: ["AES key size=512 bits: This configuration provides the highest level of security but at a significant performance cost due to the large AES key size.", "AES key size=126 bits: This configuration provides less security than option A, but RSA key generation and AES encryption will be faster.", "AES key size=256 bits: This configuration provides a high level of security, but RSA key generation may be slow.", "AES key size=192 bits: This configuration is a balance between options A and B, providing moderate security and performance."],
+            answer: ""
+        },
+        {
+            question: "As a cybersecurity analyst at Techsate Inc., you are working on a project to improve the security of a smart home system. This loT-enabled system controls various aspects of the home, from heating and lighting to security cameras and door locks. Your client wants to ensure that even if one device is compromised, the rest of the system remains secure. Which of the following strategies would be most effective for this purpose?",
+            options: ["Propose frequent systemn resets to clear any potential malware", "Recommend using a strong password for the smart home system's main control panel.", "Suggest implemnenting two-factor authentication for the smart home system's mobile app", "Advise using a dedicated network for the smart home system, separate from the home's main Wi-Fi network"],
+            answer: ""
+        },
+        {
+            question: "Being a Certified Ethical Hacker (CEH), a company has brought you on board to evaluate the safety measures in place for their network system. The company uses a network time protocol server in the demilitarized zone. During your enumeration, you decide to run a ntptrace command. Given the syntax: ntptrace [-n] [-m maxhosts] [servername/IP_address], which command usage would best serve your objective to find where the NTP server obtains the time from and to trace the list of NTP servers connected to the network?",
+            options: ["ntptrace -n -m 5 192.168.1.1", "ntptrace -n localhost", "ntptrace-m 5 192.168.1.1", "ntptrace 192.168.1.1"],
+            answer: ""
+        },
+        {
+            question: "In an intricate web application architecture using an Oracle database, you, as a security analyst, have identified a potential SQL Injection attack surface. The database consists of 'x' tables, each with 'y' columns. Each table contains 'z' records. An attacker, well-versed in SQLi techniques, crafts 'u' SQL payloads, each attempting to extract maximum data from the database. The payloads include 'UNION SELECT' statements and 'DBMS_XSLPROCESSOR.READ2CLOB' to read sensitive files. The attacker aims to maximize the total data extracted 'E=xyz*u. Assuming 'x=4', 'y=2', and varying 'z' and 'u', which situation is likely to result in the highest extracted data volume?",
+            options: ["z=550, u=2: Here, the attacker formulates 2 SQL payloads and directs them towards tables containing 550 records, impacting all columns and tables", "z=400, u=4: The attacker constructs 4 SQL payloads, each focusing on tables with 400 records, influencing all columns of all tables", "z=500, u=3: The attacker creates 3 SQL payloads and targets tables with 500 records each, exploiting all columns and tables", "z=600, u=2: The attacker devises 2 SQL payloads, each aimed at tables holding 600 records, affecting all columns across all tables"],
+            answer: ""
+        },
+        {
+            question: "Jason, a certified ethical hacker, is hired by a major e-commerce company to evaluate their network's security. As part of his reconnaissance, Jason is trying to gain as much information as possible about the company's public-facing servers without arousing suspicion. His goal is to find potential points of entry and map out the network infrastructure for further examination. Which technique should Jason employ to gather this information without alerting the company's intrusion detection systems (IDS)?",
+            options: ["Jason should perform a ping sweep to identify all the live hosts in the company's IP range", "Jason should directly connect to each server and attempt to exploit known vulnerabilities", "Jason should use passive reconnaissance techniques such as WHOIS lookups, NS lookups, and web research", "Jason should use a DNS zone transfer to gather information about the company's servers"],
+            answer: ""
+        },
+        {
+            question: "A Certified Ethical Hacker (CEH) is analyzing a target network. To do this, he decides to utilize an IDLE/IPID header scan using Nmap. The network analysis reveals that the IPID number increases by 2 after following the steps of an IDLE scan. Based on this information, what can the CEH conclude about the target network?",
+            options: ["The target network has no firewall present", "The ports on the target network are closed", "The target network has a stateful firewall present", "The ports on the target network are open"],
+            answer: ""
+        },
+        {
+            question: "An IT company has just implemented new security controls to their network and system setup. As a Certified Ethical Hacker, your responsibility is to assess the possible vulnerabilities in the new setup. You are given the information that the network and system are adequately patched with the latest updates, and all employees have gone through recent cybersecurity awareness training. Considering the potential vulnerability sources, what is the best initial approach to vulnerability assessment?",
+            options: ["Checking for hardware and software misconfigurations to identify any possible loopholes", "Investigating if any ex-employees still have access to the company's system and data", "Conducting social engineering tests to check if employees can be tricked into revealing sensitive information", "Evaluating the network for inherent technology weaknesses prone to specific types of attacks"],
+            answer: ""
+        },
+        {
+            question: "In an enterprise network assessment scenario, an ethical hacker is tasked with gathering information about a target organization. The goal is to gain a comprehensive understanding of the network topology, system vulnerabilities, and organizational details. While choosing his approach, he considered Passive and Active Footprinting. Which of the following options would be the most suitable strategy?",
+            options: ["Only Passive Footprinting, to avoid any direct interaction and possible detection by the target organization", "Only Active Footprinting, because it involves direct interaction and can provide more detailed information about the target organization", "Passive Footprinting first, followed by Active Footprinting, to minimize chances of detection during initial information gathering", "Active Footprinting first, as it requires more preparation than passive footprinting and may alert the target organization"],
+            answer: ""
+        },
+        {
+            question: "In a recent cyber-attack against a large corporation, an unknown adversary compromised the network and began escalating privileges and lateral movement. The security team identified that the adversary used a sophisticated set of techniques, specifically targeting zero-day vulnerabilities. As a Certified Ethical Hacker (CEH) hired to understand this attack and propose preventive measures, which of the following actions will be most crucial for your initial analysis?",
+            options: ["Identifying the specific tools used by the adversary for privilege escalation.", "Checking the persistence mechanisms used by the adversary in compromised systems.", "Investigating the data exfiltration methods used by the adversary.", "Analyzing the initial exploitation methods, the adversary used."],
+            answer: ""
+        },
+        {
+            question: "A skilled ethical hacker was assigned to perform a thorough OS discovery on a potential target. They decided to adopt an advanced fingerprinting technique and sent a TCP packet to an open TCP port with specific flags enabled. Upon receiving the reply, they noticed the flags were SYN and ECN-Echo. Which test did the ethical hacker conduct and why was this specific approach adopted?",
+            options: ["Test 6: The hacker selected this test because a TCP packet with the ACK flag enabled sent to a closed TCP port would yield more information about the OS", "Test 1: The test was conducted because SYN and ECN-Echo flags enabled to allow the hacker to probe the nature of the response and subsequently determine the OS fingerprint", "Test 3: The test was executed to observe the response of the target system when a packet with URG, PSH, SYN, and FIN flags was sent, thereby identifying the OS", "Test 2: This test was chosen because a TCP packet with no flags enabled is known as a NULL packet and this would allow the hacker to assess the OS of the target"],
+            answer: ""
+        },
+        {
+            question: "An ethical hacker is performing a network scan to evaluate the security of a company's IT infrastructure. During the scan, he discovers an active host with multiple open ports running various services. The hacker uses TCP communication flags to establish a connection with the host and starts communicating with it. He sends a SYN packet to a port on the host and receives a SYN/ACK packet back. He then sends an ACK packet for the received SYN/ACK packet, which triggers an open connection. Which of the following actions should the ethical hacker perform next?",
+            options: ["Send a FIN or RST packet to close the connection", "Scan another port on the same host using the SYN, ACK, and RST flags", "Conduct a vulnerability scan on the open port to identify any potential weaknesses", "Send a PSH packet to inform the receiving application about the buffered data"],
+            answer: ""
+        },
+        {
+            question: "You are a cybersecurity specialist at CloudTech Inc., a company providing cloud-based services. You are managing a project for a client who wants to migrate their sensitive data to a public cloud service. To comply with regulatory requirements, the client insists on maintaining full control over the encryption keys even when the data is at rest on the cloud. Which of the following practices should you implement to meet this requirement?",
+            options: ["Use the cloud service provider's default encryption and key management services.", "Use the cloud service provider's encryption services but store keys on-premises.", "Rely on Secure Sockets Layer {SSL) encryption for data at rest.", "Encrypt data client-side before uploading to the cloud and retain control of the encryption keys."],
+            answer: ""
+        },
+        {
+            question: "As a security analyst for SkySecure Inc., you are working with a client that uses a multi-cloud strategy, utilizing services from several cloud providers. The client wants to implement a system that will provide unified security management across all their cloud platforms. They need a solution that allows them to consistently enforce security policies, identify and respond to threats, and maintain visibility of all their cloud resources. Which of the following should you recommend as the best solution?",
+            options: ["Use a hardware-based firewall to secure all cloud resources.", "Rely on the built-in security features of each cloud platform.", "Use a Cloud Access Security Broker (CASB).", "Implement separate security management tools for each cloud platform."],
+            answer: ""
+        },
+        {
+            question: "During a comprehensive security assessment, your cybersecurity team at XYZ Corp stumbles upon signs that point toward a possible Advanced Persistent Threat (APT) infiltration in the network infrastructure. These sophisticated threats often exhibit subtle indicators that distinguish them from other types of cyberattacks. To confirm your suspicion and adequately isolate the potential APT, which of the following actions should you prioritize?",
+            options: ["Vigilantly monitor for evidence of zero-day exploits that manage to evade your firewall or antivirus software", "Search for proof of a spear-phishing attempt, such as the presence of malicious emails or risky attachments", "Scrutinize for repeat network login attempts from unrecognized geographical regions", "Investigate for anomalies in file movements or unauthorized data access attempts within your database system"],
+            answer: ""
+        },
+        {
+            question: "Your company has been receiving regular alerts from its IDS about potential intrusions. On further investigation, you notice that these alerts have been false positives triggered by certain goodware files. In response, you are planning to enhance the IDS with YARA rules, reducing these false positives while improving the detection of real threats. Based on the scenario and the principles of YARA and IDS, which of the following strategies would best serve your purpose?",
+            options: ["Creating YARA rules to examine only the private database for intrusions", "Incorporating YARA rules to detect patterns in all files regardless of their nature", "Implementing YARA rules that focus solely on known malware signatures", "Writing YARA rules specifically to identify the goodware files triggering false positives"],
+            answer: ""
+        },
+        {
+            question: "Recently, the employees of a company have been receiving emails that seem to be from their colleagues, but with suspicious attachments. When opened, these attachments appear to install malware on their systems. The IT department suspects that this is a targeted malware attack. Which of the following measures would be the most effective in preventing such attacks?",
+            options: ["Avoiding the use of outdated web browsers and email software", "Applying the latest patches and updating software programs", "Disabling Autorun functionality on all drives", "Regularly scan systerns for any new files and examine them"],
+            answer: ""
+        },
+        {
+            question: "During an ethical hacking engagement, you have been assigned to evaluate the security of a large organization's network. While examining the network traffic, you notice numerous incoming requests on various ports from different locations that show a pattern of an orchestrated attack. Based on your analysis, you deduce that the requests are likely to be automated scripts being run by unskilled hackers. What type of hacker classification does this scenario most likely represent?",
+            options: ["Black Hats trying to exploit systemn vulnerabilities for malicious intent.", "Gray Hats testing system vulnerabilities to help vendors improve security.", "Script Kiddies trying to comprornise the system using pre-made scripts.", "White Hats conducting penetration testing to identify security weaknesses."],
+            answer: ""
+        },
+        {
+            question: "An organization suspects a persistent threat from a cybercriminal. They hire an ethical hacker; John, to evaluate their system security. John identifies several vulnerabilities and advises the organization on preventive measures. However, the organization has limited resources and opts to fix only the most severe vulnerability. Subsequently, a data breach occurs exploiting a different vulnerability. Which of the following statements best describes this scenario?",
+            options: ["Both the organization and John share responsibility because they did not adequately manage the vulnerabilities.", "John is at fault because he did not emphasize the necessity of patching all vulnerabilities.", "The organization is not at fault because they used their resources as per their understanding.", "The organization is at fault because it did not fix all identified vulnerabilities."],
+            answer: ""
+        },
+        {
+            question: "As part of a penetration testing team, you've discovered a web application vulnerable to Cross-Site Scripting (XSS). The application sanitizes inputs against standard XSS payloads but fails to filter out HTML-encoded characters. On further analysis, you've noticed that the web application uses cookies to track session IDs. You decide to exploit the XSS vulnerability to steal users' session cookies. However, the application implements HTTPOnly cookies, complicating your original plan. Which of the following would be the most viable strategy for a successful attack?",
+            options: ["Create a sophisticated XSS payloac that leverages HTML encoding to bypass the input sanitization, and then use it to redirect users to a malicious site where their cookies can be captured", "Build an XSS payload using HTML encoding and use it to exploit the server-side code, potentially disabling the HTTPOnly flag on cookies", "Utilize an HTML-encoded XSS payload to trigger a buffer overflow attack, forcing the server to reveal the HTTPOnly cookies", "Develop a browser exploit to bypass the HTTPOnly restriction, then use a HTML-encoded XSS payload to retrieve the cookies"],
+            answer: ""
+        },
+        {
+            question: "During a red team assessment, a CEH is given a task to perform network scanning on the target network without revealing its IP address. They are also required to find an open port and the services available on the target machine. What scanning technique should they employ, and which command in Zenmap should they use?",
+            options: [`Use the ACK flag probe scanning technique with the command *- sA"`, `Use SCTP INIT Scan with the command "-sY"`, `Use the IDLE/IPID header scan technique with the command "-sl"`, `Use UDP Raw ICMP Port Unreachable Scanning with the command "-sU"`],
+            answer: ""
+        },
+        {
+            question: "You are a security analyst for CloudSec, a company providing cloud security solutions. One of your clients, a financial institution, wants to shift its operations to a public cloud while maintaining a high level of security control. They want to ensure that they can monitor all their cloud resources continuously and receive real-time alerts about potential security threats. They also want to enforce their security policies consistently across all cloud workloads. Which of the following solutions would best meet these requirements?",
+            options: ["Use client-side encryption for all stored data.", "Implement a Virtual Private Network (VPN) for secure data transmission.", "Use multi-factor authentication for all cloud user accounts.", "Deploy a Cloud Access Security Broker (CASB)."],
+            answer: ""
+        },
+        {
+            question: "A multinational corporation's computer system was infiltrated by an advanced persistent threat (APT). During forensic analysis, it was discovered that the malware was utilizing a blend of two highly sophisticated techniques to stay undetected and continue its operations. <br> Firstly, the malware was embedding its harmful code into the actual binary or executable part of genuine system files rather than appending or prepending itself to the files. This made it exceptionally difficult to detect and eradicate, as doing so risked damaging the system files themselves.<br> Secondly, the malware exhibited characteristics of a type of malware that changes its code as it propagates, making signature-based detection approaches nearly impossible.<br> On top of these, the malware maintained a persistent presence by installing itself in the registry, making it able to survive system reboots. <br> Given these distinctive characteristics, which two types of malware techniques does this malware most closęly embody?",
+            options: ["Polymorphic and Metamorphic malware", "Metamorphic and Rootkit malware", "Macro and Rootkit malware", "Polymorphic and Macro malware"],
+            answer: ""
+        },
+        {
+            question: "During an attempt to perform an SQL injection attack, a certified ethical hacker is focusing on the identification of database engine type by generating an ODBC error. The ethical hacker, after injecting various payloads, finds that the web application returns a standard, generic error message that does not reveal any detailed database information. Which of the following techniques would the hacker consider next to obtain useful information about the underlying database?",
+            options: ["Use the UNION operator to combine the result sets of two or more SELECT statemnents", "Utilize a blind injection technique that uses time delays or error signatures to extract information", "Try to insert a string value where a number is expected in the input field", "Attempt to compromise the system through OS-level command shell execution"],
+            answer: ""
+        },
+        {
+            question: "A well-resourced attacker intends to launch a highly disruptive DDos attack against a major online retailer. The attacker aims to exhaust all the network resources while keeping their identity concealed. Their method should be resistant to simple defensive measures such as IP-based blocking. Based on these objectives, which of the following attack strategies would be most effective? ",
+            options: ["The attacker should leverage a botnet to launch a Pulse Wave attack, sending high-volumne traffic pulses at regular intervals", "The attacker should execute a simple ICMP flood attack from a single IP, exploiting the retailer's ICMP processing", "The attacker should initiate a volumetric flood attack using a single compromised machine to overwhelm the retailer's network bandwidth", "The attacker should instigate a protocol-based SYN flood attack, consuming connection state tables on the retailer's servers"],
+            answer: ""
+        },
+        {
+            question: "As a Certified Ethical Hacker, you are conducting a footprinting and reconnaissance operation against a target organization. You discover a range of IP addresses associated with the target using the SecurityTrails tool. Now, you need to perform a reverse DNS lookup on these IP addresses to find the associated domain names, as well as determine the nameservers and mail exchange (MX) records. Which of the following DNSRecon commands would be most effective for this purpose?",
+            options: ["dnsrecon -r 10.0.0.0/24 -n nsl.example.com -t zonewalk", "dnsrecon -r 192.168.1.0/24 -n nsl.example.com -t axfr", "dnsrecon -r 162.241.216.0/24 -n nsl.example.com -t std", "dnsrecon -r 162.241.216.0/24 -d example.com -t brt"],
+            answer: ""
+        },
+        {
+            question: "Your network infrastructure is under a SYN flood attack. The attacker has crafted an automated botnet to simultaneously send 's' SYN packets per second to the server. You have put measures in place to manage 'f' SYN packets per second, and the system is designed to deal with this number without any performance issues. If 's' exceeds 'f, the network infrastructure begins to show signs of overload. The system's response time increases exponentially (2^k), where 'k' represents each additional SYN packet above the 'f' limit. Now, considering 's=500' and different 'f values, in which scenario is the server most likely to experience overload and significantly increased response times?",
+            options: [`f=490: The server can handle 490 SYN packets per second. With 's' exceeding "f by 10, the response time shoots up (2^10 = 1024 times the usual response time), indicating a systemn overload`, `f=505: The server can handle 505 SYN packets per second. In this case, the response time increases but not as drastically {2^5 = 32 times the normal), and the system might still function, albeit slowly`, `f=495: The server can handle 495 SYN packets per second. The response time drastically rises (2^5 = 32 times the normal), indicating a probable system overload`, `f=510: The server can handle 510 SYN packets per second, which is greater than what the attacker is sending. The system stays stable, and the response time remains unaffected`],
+            answer: ""
+        },
+        {
+            question: "As a security consultant, you are advising a startup that is developing an IoT device for home security. The device communicates with a mobile app, allowing homeowners to monitor their homes in real time. The CEO is concerned about potential Man-in-the-Middle (MitM) attacks that could allow an attacker to intercept and manipulate the device's communication. Which of the following solutions would best protect against such attacks?",
+            options: ["Implement SSL/TLS encryption for data transmission between the IoT device and the mobile app.", "Frequently change the IoT device's IP address.", "Use CAPTCHA on the mobile app's login screen.", "Limit the range of the IoT device's wireless signals."],
+            answer: ""
+        },
+        {
+            question: "An ethical hacker is scanning a target network. They initiate a TCP connection by sending an SYN packet to a target machine and receiving a SYN/ACK packet in response. But instead of completing the three-way handshake with an ACK packet, they send an RST packet. What kind of scan is the ethical hacker likely performing and what is their goal?",
+            options: ["They are performing a TCP connect scan to identify open ports on the target machine", "They are performing a vulnerability scan to identify any weaknesses in the target system", "They are performing a network scan to identify live hosts and their IP addresses", "They are performing an SYN scan to stealthily identify open ports without fully establishing a connection"],
+            answer: ""
+        },
+
         // Add more questions similarly
     ];
 
