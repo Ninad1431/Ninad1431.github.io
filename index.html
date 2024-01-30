@@ -101,7 +101,7 @@
             4) Certain TCP/IP protocols used in the organization are inherently insecure.<br>
             The security analyst decides to use vulnerability scanning software. Which of the following limitations of vulnerability assessment should the analyst be most cautious about in this context?`,
             options: ["Vulnerability scanning software is not immune to software engineering flaws that might lead to serious vulnerabilities being missed", "Vulnerability scanning software is limited in its ability to detect vulnerabilities at a given point in time", "Vulnerability scanning software is limited in its ability to perform live tests on web applications to detect errors or unexpected behavior", "Vulnerability scanning software cannot define the impact of an identified vulnerability on different business operations"],
-            answer: ""
+            answer: "B. Vulnerability scanning software is limited in its ability to detect vulnerabilities at a given point in time"
         },
         {
             question: "You are a cybersecurity consultant at SecureloT Inc. A manufacturing company has contracted you to strengthen the security of their Industrial loT (IIoT) devices used in their operational technology (OT)environment. They are concerned about potential attacks that could disrupt their production lines and compromise safety. They have an advanced firewall system in place, but you know this alone is not enough. Which of the following measures should you suggest to provide comprehensive protection of their lloT devices?",
@@ -136,7 +136,7 @@
         {
             question: "An ethical hacker is testing the security of a website's database system against SQL Injection attacks. They discover that the IDS has a strong signature detection mechanism to detect typical SQL injection patterns. Which evasion technique can be most effectively used to bypass the IDS signature detection while performing a SQL Injection attack?",
             options: ["Employ IP fragmentation to obscure the attack payload", "Leverage string concatenation to break identifiable keywords", "Implemnent case variation by altering the case of SQL statements", "Use Hex encoding to represent the SQL query string"],
-            answer: ""
+            answer: "D. Use Hex encoding to represent the SQL query string"
         },
         {
             question: "You are an ethical hacker tasked with conducting an enumeration of a company's network. Given a Windows system with NetBIOS enabled, port 139 open, and file and printer sharing active, you are about to run some nbtstat commands to enumerate NetBIOS names. The company uses IPv6 for its network. Which of the following actions should you take next?",
@@ -191,7 +191,7 @@
         {
             question: "You are a cybersecurity consultant for a smart city project. The project involves deploying a vast network of loT devices for public utilities like traffic control, water supply, and power grid management. The city administration is concerned about the possibility of a Distributed Denial of Service (DDoS) attack crippling these critical services. They have asked you for advice on how to prevent such an attack. What would be your primary recommendation?",
             options: ["Deploy network intrusion detection systems (IDS) across the loT network", "Establish strong, unique passwords for each loT device.", "Implement regular firmware updates for all loT devices.", "Implement IP address whitelisting for all loT devices."],
-            answer: ""
+            answer: "A. Deploy network intrusion detection systems (IDS) across the loT network"
         },
         {
             question: "A large enterprise has been experiencing sporadic system crashes and instability, resulting in limited access to its web services. The security team suspects it could be a result of a Denial of Service (Dos) attack. A significant increase in traffic was noticed in the network logs, with patterns suggesting packet sizes exceeding the prescribed size limit. Which among the following Dos attack techniques best describes this scenario?",
@@ -231,12 +231,12 @@
         {
             question: "Sarah, a system administrator, was alerted of potential malicious activity on the network of her company. She discovered a malicious program spread through the instant messenger application used by her team. The attacker had obtained access to one of her teammate's messenger accounts and started sending files across the contact list. Which best describes the attack scenario and what measure could have prevented it?",
             options: ["Rogue/Decoy Applications; ensuring software is labeled as TRUSTED", "Portable Hardware Media/Removable Devices; disabling Autorun functionality", "Instant Messenger Applications; verifying the sender's identity before opening any files", "Insecure Patch Management; updating application software regularly"],
-            answer: ""
+            answer: "C. Instant Messenger Applications; verifying the sender's identity before opening any files"
         },
         {
             question: "You are the lead cybersecurity analyst at a multinational corporation that uses a hybrid encryption system to secure inter-departmental communications. The system uses RSA encryption for key exchange and AES for data encryption, taking advantage of the strengths of both asymmetric and symmetric encryption. Each RSA key pair has a size of 'n' bits, with larger keys providing more security at the cost of slower performance. The time complexity of generating an RSA key pair is O(n^2), and AES encryption has a time complexity of O(n). An attacker has developed a quantum algorithm with time complexity O((log n)^2) to crack RSA encryption. Given 'n=4000' and variable 'AES key size', which scenario is likely to provide the best balance of security and performance?",
             options: ["AES key size=512 bits: This configuration provides the highest level of security but at a significant performance cost due to the large AES key size.", "AES key size=126 bits: This configuration provides less security than option A, but RSA key generation and AES encryption will be faster.", "AES key size=256 bits: This configuration provides a high level of security, but RSA key generation may be slow.", "AES key size=192 bits: This configuration is a balance between options A and B, providing moderate security and performance."],
-            answer: ""
+            answer: "D. AES key size=192 bits: This configuration is a balance between options A and B, providing moderate security and performance."
         },
         {
             question: "As a cybersecurity analyst at Techsate Inc., you are working on a project to improve the security of a smart home system. This loT-enabled system controls various aspects of the home, from heating and lighting to security cameras and door locks. Your client wants to ensure that even if one device is compromised, the rest of the system remains secure. Which of the following strategies would be most effective for this purpose?",
@@ -266,7 +266,7 @@
         {
             question: "An IT company has just implemented new security controls to their network and system setup. As a Certified Ethical Hacker, your responsibility is to assess the possible vulnerabilities in the new setup. You are given the information that the network and system are adequately patched with the latest updates, and all employees have gone through recent cybersecurity awareness training. Considering the potential vulnerability sources, what is the best initial approach to vulnerability assessment?",
             options: ["Checking for hardware and software misconfigurations to identify any possible loopholes", "Investigating if any ex-employees still have access to the company's system and data", "Conducting social engineering tests to check if employees can be tricked into revealing sensitive information", "Evaluating the network for inherent technology weaknesses prone to specific types of attacks"],
-            answer: ""
+            answer: "B. Investigating if any ex-employees still have access to the company's system and data"
         },
         {
             question: "In an enterprise network assessment scenario, an ethical hacker is tasked with gathering information about a target organization. The goal is to gain a comprehensive understanding of the network topology, system vulnerabilities, and organizational details. While choosing his approach, he considered Passive and Active Footprinting. Which of the following options would be the most suitable strategy?",
@@ -286,12 +286,12 @@
         {
             question: "An ethical hacker is performing a network scan to evaluate the security of a company's IT infrastructure. During the scan, he discovers an active host with multiple open ports running various services. The hacker uses TCP communication flags to establish a connection with the host and starts communicating with it. He sends a SYN packet to a port on the host and receives a SYN/ACK packet back. He then sends an ACK packet for the received SYN/ACK packet, which triggers an open connection. Which of the following actions should the ethical hacker perform next?",
             options: ["Send a FIN or RST packet to close the connection", "Scan another port on the same host using the SYN, ACK, and RST flags", "Conduct a vulnerability scan on the open port to identify any potential weaknesses", "Send a PSH packet to inform the receiving application about the buffered data"],
-            answer: ""
+            answer: "C. Conduct a vulnerability scan on the open port to identify any potential weaknesses"
         },
         {
             question: "You are a cybersecurity specialist at CloudTech Inc., a company providing cloud-based services. You are managing a project for a client who wants to migrate their sensitive data to a public cloud service. To comply with regulatory requirements, the client insists on maintaining full control over the encryption keys even when the data is at rest on the cloud. Which of the following practices should you implement to meet this requirement?",
             options: ["Use the cloud service provider's default encryption and key management services.", "Use the cloud service provider's encryption services but store keys on-premises.", "Rely on Secure Sockets Layer {SSL) encryption for data at rest.", "Encrypt data client-side before uploading to the cloud and retain control of the encryption keys."],
-            answer: ""
+            answer: "D. Encrypt data client-side before uploading to the cloud and retain control of the encryption keys."
         },
         {
             question: "As a security analyst for SkySecure Inc., you are working with a client that uses a multi-cloud strategy, utilizing services from several cloud providers. The client wants to implement a system that will provide unified security management across all their cloud platforms. They need a solution that allows them to consistently enforce security policies, identify and respond to threats, and maintain visibility of all their cloud resources. Which of the following should you recommend as the best solution?",
@@ -311,7 +311,7 @@
         {
             question: "Recently, the employees of a company have been receiving emails that seem to be from their colleagues, but with suspicious attachments. When opened, these attachments appear to install malware on their systems. The IT department suspects that this is a targeted malware attack. Which of the following measures would be the most effective in preventing such attacks?",
             options: ["Avoiding the use of outdated web browsers and email software", "Applying the latest patches and updating software programs", "Disabling Autorun functionality on all drives", "Regularly scan systerns for any new files and examine them"],
-            answer: ""
+            answer: "B. Applying the latest patches and updating software programs"
         },
         {
             question: "During an ethical hacking engagement, you have been assigned to evaluate the security of a large organization's network. While examining the network traffic, you notice numerous incoming requests on various ports from different locations that show a pattern of an orchestrated attack. Based on your analysis, you deduce that the requests are likely to be automated scripts being run by unskilled hackers. What type of hacker classification does this scenario most likely represent?",
@@ -326,7 +326,7 @@
         {
             question: "As part of a penetration testing team, you've discovered a web application vulnerable to Cross-Site Scripting (XSS). The application sanitizes inputs against standard XSS payloads but fails to filter out HTML-encoded characters. On further analysis, you've noticed that the web application uses cookies to track session IDs. You decide to exploit the XSS vulnerability to steal users' session cookies. However, the application implements HTTPOnly cookies, complicating your original plan. Which of the following would be the most viable strategy for a successful attack?",
             options: ["Create a sophisticated XSS payload that leverages HTML encoding to bypass the input sanitization, and then use it to redirect users to a malicious site where their cookies can be captured", "Build an XSS payload using HTML encoding and use it to exploit the server-side code, potentially disabling the HTTPOnly flag on cookies", "Utilize an HTML-encoded XSS payload to trigger a buffer overflow attack, forcing the server to reveal the HTTPOnly cookies", "Develop a browser exploit to bypass the HTTPOnly restriction, then use a HTML-encoded XSS payload to retrieve the cookies"],
-            answer: ""
+            answer: "A. Create a sophisticated XSS payload that leverages HTML encoding to bypass the input sanitization, and then use it to redirect users to a malicious site where their cookies can be captured"
         },
         {
             question: "During a red team assessment, a CEH is given a task to perform network scanning on the target network without revealing its IP address. They are also required to find an open port and the services available on the target machine. What scanning technique should they employ, and which command in Zenmap should they use?",
@@ -381,17 +381,17 @@
         {
             question: "A penetration tester was assigned to scan a large network range to find live hosts. The network is known for using strict TCP filtering rules on its firewall, which may obstruct common host discovery techniques. The tester needs a method that can bypass these firewall restrictions and accurately identify live systems. What host discovery technique should the tester use?",
             options: ["ICMP Timestamp Ping Scan", "UDP Ping Scan", "ICMP ECHO Ping Scan", "TCP SYN Ping Scan"],
-            answer: ""
+            answer: "B. UDP Ping Scan"
         },
         {
             question: "As a part of an ethical hacking exercise, an attacker is probing a target network that is suspected to employ various honeypot systems for security. The attacker needs to detect and bypass these honeypots without alerting the target. The attacker decides to utilize a suite of techniques. Which of the following techniques would NOT assist in detecting a honeypot?",
             options: ["Implementing a brute force attack to verify system vulnerability", "Analyzing the MAC address to detect instances running on VMware", "Using honeypot detection tools like Send-Safe Honeypot Hunter", "Probing syster services and observing the three-way handshake"],
-            answer: ""
+            answer: "A. Implementing a brute force attack to verify system vulnerability"
         },
         {
             question: "In a large organization, a network security analyst discovered a series of packet captures that seem unusual. The network operates on a switched Ethernet environment. The security team suspects that an attacker might be using a sniffer tool. Which technique could the attacker be using to successfully carry out this attack, considering the switched nature of the network?",
             options: ["The attacker is probably using a Trojan horse with in-built sniffing capability", "The attacker might be using passive sniffing, as it provides significant stealth advantages", "The attacker might be implementing MAC flooding to overwhelm the switch's memnory", "The attacker might be compromising physical security to plug into the network directly"],
-            answer: ""
+            answer: "C. The attacker might be implementing MAC flooding to overwhelm the switch's memnory"
         },
         {
             question: "In an advanced persistent threat scenario, an adversary follows a detailed set of procedures in the cyber kill chain. During one such instance, the adversary has successfully gained access to a corporate network and now attempts to obfuscate malicious traffic within legitimate network traffic. Which of the following actions would most likely be part of the adversary's current procedures?",
@@ -401,7 +401,7 @@
         {
             question: "An experienced cyber attacker has created a fake Linkedin profile, successfully impersonating a high-ranking official from a well-established company, to execute a social engineering attack. The attacker then connected with other employees within the organization, receiving invitations to exclusive corporate events and gaining access to proprietary project details shared within the network. What advanced social engineering technique has the attacker primarily used to exploit the system and what is the most likely immediate threat to the organization?",
             options: ["Pretexting and Network Vulnerability", "Baiting and Involuntary Data Leakage", "Whaling and Targeted Attacks", "Spear Phishing and Spam"],
-            answer: ""
+            answer: "C. Whaling and Targeted Attacks"
         },
         {
             question: "You are a cybersecurity consultant for a global organization. The organization has adopted a Bring Your Own Device (BYOD)policy, but they have recently experienced a phishing incident where an employee's device was compromised. In the investigation, you discovered that the phishing attack occurred through a third-party email app that the employee had installed. Given the need to balance security and user autonomy under the BYOD policy, how should the organization mitigate the risk of such incidents? Moreover, consider a measure that would prevent similar attacks without overly restricting the use of personal devices.",
@@ -486,175 +486,175 @@
         {
             question: "You work as a cloud security specialist at SkyNet Solutions. One of your clients is a healthcare organization that plans to migrate its electronic heaith record (EHR) system to the cloud. This system contains highly sensitive personal and medical data. As part of your job, you need to ensure the security and privacy of this data while it is being transferred and stored in the cloud. You recommend that data should be encrypted during transit and at rest. However, you also need to ensure that even if a cloud service provider(CSP) has access to encrypted data, they should not be able to decrypt it. Which of the following would be the most suitable strategy to meet this requirement?",
             options: ["Use SSL/TLS for data transfer and allow the CSP to manage encryption keys", "Rely on network-level encryption protocols for data transfer.", "Use client-side encryption and manage encryption keys independently of the CSP.", "Utilize the CSP's built-in data encryption services."],
-            answer: ""
+            answer: "C. Use client-side encryption and manage encryption keys independently of the CSP."
         },
         {
             question: "You have been hired as an intern at a start-up company. Your first task is to help set up a basic web server for the company's new website. The team leader has asked you to make sure the server is secure from common threats. Based on your knowledge from studying for the CEH exam, which of the following actions should be your priority to secure the web server?",
             options: ["Encrypting the company's website with SSL/TLS", "Limiting the number of concurrent connections to the server", "Installing a web application firewall", "Regularly updating and patching the server software"],
-            answer: ""
+            answer: "D. Regularly updating and patching the server software"
         },
         {
             question: "A company recently experienced a debilitating social engineering attack that led to substantial identity theft. An inquiry found that the employee inadvertently provided critical information during an innocuous phone conversation. Considering the specific guidelines issued by the company to thwart social engineering attacks, which countermeasure would have been the most successful in averting the incident? ",
             options: ["Implement a well-documented change management process for modifications related to hardware or software", "Adopt a robust software policy that restricts the installation of unauthorized applications", "Conduct comprehensive training sessions for employees on various social engineering methodologies and the risks associated with revealing confidential data", "Reinforce physical security measures to limit access to sensitive zones within the company premises, thereby warding off unauthorized intruders"],
-            answer: ""
+            answer: "C. Conduct comprehensive training sessions for employees on various social engineering methodologies and the risks associated with revealing confidential data"
         },
         {
             question: "An ethical hacker is preparing to scan a network to identify live systems. To increase the efficiency and accuracy of his scans, he is considering several different host discovery techniques. He expects several unused IP addresses at any given time, specifically within the private address range of the LAN, but he also anticipates the presence of restrictive firewalls that may conceal active devices. Which scanning method would be most effective in this situation?",
             options: ["ICMP Timestamp Ping", "ICMP ECHO Ping Sweep", "ARP Ping Scan", "TCP SYN Ping"],
-            answer: ""
+            answer: "C. ARP Ping Scan"
         },
         {
             question: "You are a cybersecurity professional managing cryptographic systems for a giobal corporation. The company uses a mix of Elliptic Curve Cryptography (ECC) for key exchange and symmetric encryption algorithms for data encryption. The time complexity of ECC key pair generation is O(n^3), where 'n' is the size of the key. An advanced threat actor group has a quantum computer that can potentially break Encryption with a time complexity of O((log n)^2). Given that the ECC key size is 'n=512' and varying symmetric encryption algorithms and key sizes, which scenario would provide the best balance of security and performance?",
             options: ["Data encryption with 3DES using a 168-bit key: Offers high security but slower performance due to 3DES's inherent inefficiencies.", "Data encryption with AES-256: Provides high security with better performance than 3DES, but not fast as other AES key sizes.", "Data encryption with Blowfish using a 448-bit key: Offers high security but potential compatibility issues due to Blowfish's less widespread use.", "Data encryption with AES-128: Provides moderate security and fast encryption, offering a balance between the two"],
-            answer: ""
+            answer: "D. Data encryption with AES-128: Provides moderate security and fast encryption, offering a balance between the two"
         },
         {
             question: "As a budding cybersecurity enthusiast, you have set up a small lab at home to learn more about wireless network security. While experimenting with your home Wi-Fi network, you decide to use a well-known hacking tool to capture network traffic and attempt to crack the Wi-Fi password. However, despite many attempts, you have been unsuccessful. Your home Wi-Fi network uses WPA2 Personal with AES encryption. Why are you finding it difficult to crack the Wi-Fi password?",
             options: ["The Wi-Fi password is too complex and long", "The network is using MAC address filtering.", "The network is using an uncrackable encryption method", "Your hacking tool is outdated"],
-            answer: ""
+            answer: "A. The Wi-Fi password is too complex and long"
         },
         {
             question: `You are a cybersecurity trainee tasked with securing a small home network. The homeowner is concerned about potential "Wi-Fi eavesdropping", where unauthorized individuals could intercept the wireless communications. What would be the most effective first step to mitigate this risk, considering the simplicity and the residential nature of the network?`,
             options: ["Enable encryption on the wireless network", "Disable the network's SSID broadcast", "Enable MAC address filtering", "Reduce the signal strength of the wireless router"],
-            answer: ""
+            answer: "A. Enable encryption on the wireless network"
         },
 
         {
             question: "Martin, a Certified Ethical Hacker (CEH), is conducting a penetration test on a large enterprise network. He suspects that sensitive information might be leaking out of the network. Martin decides to use network sniffing as part of his testing methodology. Which of the following sniffing techniques should Martin employ to get a comprehensive understanding of the data flowing across the network?",
             options: ["DNS Poisoning", "MAC Flooding", "ARP Poisoning", "Raw Sniffing"],
-            answer: ""
+            answer: "D. Raw Sniffing"
         },
 
         {
             question: "A penetration tester is conducting an assessment of a web application for a financial institution. The application uses form-based authentication and does not implement account lockout policies after multiple failed login attempts. Interestingly, the application displays detailed error messages that disclose whether the username or password entered is incorrect. The tester also notices that the application uses HTTP headers to prevent clickjacking attacks but does not implement Content Security Policy (CSP). With these observations, which of the following attack methods would likely be the most effective for the penetration tester to exploit these vulnerabilities and attempt unauthorized access?",
             options: ["The tester could execute a Man-in-the-Middle {MitM) attack to intercept and modify the HTTP headers for a Clickjacking attack", "The tester could launch a Cross-Site Scripting (XSS) attack to steal authenticated session cookies, potentially bypassing the clickjacking protection", "The tester could exploit a potential SQL Injection vulnerability to manipulate the application's database", "The tester could execute a Brute Force attack, leveraging the lack of account lockout policy and the verbose error messages to guess the correct credentials"],
-            answer: ""
+            answer: "D. The tester could execute a Brute Force attack, leveraging the lack of account lockout policy and the verbose error messages to guess the correct credentials"
         },
         {
             question: "You are the chief security officer at AlphaTech, a tech company that specializes in data storage solutions. Your company is developing a new cloud storage platform where users can store their personal files. To ensure data security, the development team is proposing to use symmetric encryption for data at rest. However, they are unsure of how to securely manage and distribute the symmetric keys to users. Which of the following strategies would you recommend to them?",
             options: ["Use digital signatures to encrypt the symmetric keys.", "Implement the Diffie-Hellman protocol for secure key exchange.", "Use HTTPS protocol for secure key transfer.", "Use hash functions to distribute the keys."],
-            answer: ""
+            answer: "B. Implement the Diffie-Hellman protocol for secure key exchange."
         },
         {
             question: `You are a cybersecurity consultant for a major airport that offers free Wi-Fi to travelers. The management is concerned about the possibility of "Evil Twin" attacks, where a malicious actor sets up a rogue access point that mimics the legitimate one. They are looking for a solution that would not significantly impact the user experience or require travelers to install additional software. What is the most effective security measure you could recommend that fits these constraints, considering the airport's unique operational environment?`,
             options: ["Use MAC address filtering on the airport's Wi-Fi network", "Implement WPA3 encryption for the airport's Wi-Fi network", "Display a captive portal page that warns users about the possibility of Evil Twin attacks", "Regularly change the SSID of the airport's Wi-Fi network"],
-            answer: ""
+            answer: "B. Implement WPA3 encryption for the airport's Wi-Fi network"
         },
         {
             question: "In the process of footprinting a target website, an ethical hacker utilized various tools to gather critical information. The hacker encountered a target site where standard web spiders were ineffective due to a specific file in its root directory. However, they managed to uncover all the files and web pages on the target site, monitoring the resulting incoming and outgoing traffic while browsing the website manually. What technique did the hacker likely employ to achieve this?",
             options: ["User-directed spidering with tools like Burp Suite and WebScarab", "Using the Netcraft tool to gather website information", "Examining HTML source code and cookies", "Using Photon to retrieve archived URLs of the target website from archive.org"],
-            answer: ""
+            answer: "A. User-directed spidering with tools like Burp Suite and WebScarab"
         },
         {
             question: "A Certified Ethical Hacker (CEH) is given the task to perform an LDAP enumeration on a target system. The system is secured and accepts connections only on secure LDAP. The CEH uses Python for the enumeration process. After successfully installing LDAP and establishing a connection with the target, he attempts to fetch details like the domain name and naming context but is unable to receive the expected response. Considering the circumstances, which of the following is the most plausible reason for this situation?",
             options: ["The secure LDAP connection was not properly initialized due to a lack of 'use_ssl = True' in the server object creation", "The Python version installed on the CEH's machine is incompatible with the Idap3 library", "The systern failed to establish a connection due to an incorrect port number", "The enumeration process was blocked by the target system's intrusion detection system"],
-            answer: ""
+            answer: "A. The secure LDAP connection was not properly initialized due to a lack of 'use_ssl = True' in the server object creation"
         },
         {
             question: "During a reconnaissance mission, an ethical hacker uses Maltego, a popular footprinting tool, to collect information about a target organization. The information includes the target's Internet infrastructure details (domains, DNS names, Netblocks, IP address information). The hacker decides to use social engineering techniques to gain further information. Which of the following would be the least likely method of social engineering to yield beneficial information based on the data collected?",
-            options: ["Eavesdropping on internal corporate conversations to understand key topics Shoulder surfing to observe sensitive credentials input on the target's computers", "Shoulder surfing to observe sensitive credentials input on the target's computers", "Impersonating an ISP technical support agent to trick the target into providing further network details", "Dumpster diving in the target company's trash bins for valuable printouts"],
-            answer: ""
+            options: ["Eavesdropping on internal corporate conversations to understand key topics", "Shoulder surfing to observe sensitive credentials input on the target's computers", "Impersonating an ISP technical support agent to trick the target into providing further network details", "Dumpster diving in the target company's trash bins for valuable printouts"],
+            answer: "A. Eavesdropping on internal corporate conversations to understand key topics"
         },
         {
             question: "An IT security team is conducting an internal revlew of security protocols in their organization to identify potential vulnembilities. During their Investigation, they encounter a suspicious program running on several computers. Further examination reveals that the program has been logging all user keystrokes. How can the security team confirm the type of program and what countermessures should be taken to ensure the same attack does not occur in the future?",
             options: ["The program is a keylogger; the team should employ intrusion detection systerns and regularly update the system software", "The program is spyware; the teamn should use password managers ard encrypt sensitive data", "The program is a Trojan; the teamn should regularly update antivirus software and install a reliable firewall", "The program is a keylogger; the teamn should educate employees about phishing attacks and maintain regular backups"],
-            answer: ""
+            answer: "A. The program is a keylogger; the team should employ intrusion detection systerns and regularly update the system software"
         },
         {
-            question: "As a certified ethical hacker, you are tasked with gaining information about an enterprise's internai network. You are permitted to test the network's security using enumeration techniques. You successfully obtain a list of usernames using email IDs and execute a DNS Zone Transfer. Which enumeration technique would be most effective for your next move given that you have identified open TCP ports 25 (SMTP) and 139 (NetBIOS Session Service)?",
+            question: "As a certified ethical hacker, you are tasked with gaining information about an enterprise's internal network. You are permitted to test the network's security using enumeration techniques. You successfully obtain a list of usernames using email IDs and execute a DNS Zone Transfer. Which enumeration technique would be most effective for your next move given that you have identified open TCP ports 25 (SMTP) and 139 (NetBIOS Session Service)?",
             options: ["Perform a brute force attack on Microsoft Active Directory to extract valid usernames", "Exploit the NFS protocol or TCP port 2049 to gain control over a remote system", "Use SNMP to extract usernames given the community strings", "Exploit the NetBIOS Session Service on TCP port 139 to gain unauthorized access to the file system"],
             answer: ""
         },
         {
             question: "An ethical hacker is attempting to crack NTLM hashed passwords from a Windows SAM file using a rainbow table attack. He has dumped the on-disk contents of the SAM file successfully and noticed that all LM hashes are blank. Given this scenario, which of the following would be the most likely reason for the blank LM hashes?",
             options: ["The SAM file has been encrypted using the SYSKEY function", "The Windows systemn is Vista or a later version, where LM hashes are disabled by default", `The passwords exceeded 14 characters in length and therefore, the LM hashes were set to a "dummy" value`, "The Windows system is using the Kerberos authentication protocol as the default method"],
-            answer: ""
+            answer: "B. The Windows systemn is Vista or a later version, where LM hashes are disabled by default"
         },
         {
             question: "You are a cloud security expert at CloudGuard Inc. working with a client who plans to transition their infrastructure to a public cloud. The client expresses concern about potential data breaches and wants to ensure that only authorized personnel can access certain sensitive resources. You propose implementing a Zero Trust security model. Which of the following best describes how the Zero Trust model would enhance the security of their cloud resources?",
             options: ["It ensures secure data transmission by implementing SSL/TLS protocols.", "It operates on the principle of least privilege, verifying each request as if it is from an untrusted source, regardless of its location.", "It encrypts all data stored in the cloud, ensuring only authorized users can decrypt it.", "It uses multi-factor authentication for all user accounts."],
-            answer: ""
+            answer: "B. It operates on the principle of least privilege, verifying each request as if it is from an untrusted source, regardless of its location."
         },
         {
             question: "Jake, a network security specialist, is trying to prevent network-level session hijacking attacks in his company. While studying different types of such attacks, he learns about a technique where an attacker inserts their machine into the communication between a client and a server, making it seem like the packets are flowing through the original path. This technique is primarily used to reroute the packets. Which of the following types of network-level session hijacking attacks is Jake studying?",
             options: ["TCP/IP Hijacking", "RST Hijacking", "Man-in-the-middle Attack Using Forged ICMP and ARP Spoofing", "UDP Hijacking"],
-            answer: ""
+            answer: "C. Man-in-the-middle Attack Using Forged ICMP and ARP Spoofing"
         },
         {
             question: "You are a security analyst of a large IT company and are responsible for maintaining the organization's security posture. You are evaluating multiple vulnerability assessment tools for your network. Given that your network has a hybrid IT environment with on-premise and cloud assets, which tool would be most appropriate considering its comprehensive coverage and visibility, continuous scanning, and ability to monitor unexpected changes before they turn into breaches?",
             options: ["GFI LanGuard", "Qualys Vulnerability Managernent", "Nessus Professional", "OpenVAS"],
-            answer: ""
+            answer: "B. Qualys Vulnerability Managernent"
         },
         {
             question: `As the lead security engineer for a retail corporation, you are assessing the security of the wireless networks in the company's stores. One of your main concerns is the potential for "Wardriving" attacks, where attackers drive around with a Wi-Fi-enabled device to discover vulnerable wireless networks. Given the nature of the retail stores, you need to ensure that any security measures you implement do not interfere with customer experience, such as their ability to access in-store Wi-Fi. Taking into consideration these factors, which of the following would be the most suitable measure to mitigate the risk of Wardriving attacks? `,
             options: ["Implernent WPA3 encryption for the store's Wi-Fi network", "Disable SSID broadcasting", "Limit the range of the store's wireless signals", "Implement MAC address filtering"],
-            answer: ""
+            answer: "A. Implernent WPA3 encryption for the store's Wi-Fi network"
         },
 
         {
             question: "You are the chief cybersecurity officer at CloudSecure Inc., and your team is responsible for securing a cloud-based application that handles sensitive customer data. To ensure that the data is protected from breaches, you have decided to implement encryption for both data-at-rest and data-in-transit. The development team suggests using SSL/TLS for securing data in transit. However, you want to also implement a mechanism to detect if the data was tampered with during transmission. Which of the following should you propose?",
             options: ["Encrypt data using the AES algorithm before transmission.", "Switch to using SSH for data transmission.", "Implement IPsec in addition to SSL/TLS.", "Use the cloud service provider's built-in encryption services."],
-            answer: ""
+            answer: "C. Implement IPsec in addition to SSL/TLS."
         },
         {
             question: "A certified ethical hacker is conducting a Whois footprinting activity on a specific domain. The individual is leveraging various tools such as Batch IP Converter and Whols Analyzer Pro to retrieve vital details but is unable to gather complete Whois information from the registrar for a particular set of data. As the hacker, what might be the probable data model being utilized by the domain's registrar for storing and looking up Whois information?",
             options: ["Thick Whois model with a malfunctioning server", "Thick Whois model working correctly", "Thin Whois model with a malfunctioning server", "Thin Whois model working correctly"],
-            answer: ""
+            answer: "C. Thin Whois model with a malfunctioning server"
         },
         {
             question: "A certified ethical hacker is carrying out an email footprinting exercise on a targeted organization using eMailTrackerPro. They want to map out detailed information about the recipient's activities after receiving the email. Which among the following pieces of information would NOT be directly obtained from eMailTrackerPro during this exercise?",
             options: ["Type of device used to open the email", "The email accounts related to the domain of the organization", "Geolocation of the recipient", "The time recipient spent reading the email"],
-            answer: ""
+            answer: "B. The email accounts related to the domain of the organization"
         },
         {
             question: "Given the complexities of an organization's network infrastructure, a threat actor has exploited an unidentified vulnerability, leading to a major data breach. As a Certified Ethical Hacker (CEH), you are tasked with enhancing the organization's security stance. To ensure a comprehensive security defense, you recommend a certain security strategy. Which of the following best represents the strategy you would likely suggest and why?",
             options: ["Develop an in-depth Risk Management process, involving identification, assessment, treatment, tracking, and review of risks to control the potential effects on the organization.", "Adopt a Continual/Adaptive Security Strategy involving ongoing prediction, prevention, detection, and response actions to ensure comprehensive computer network defense.", "Implement an Information Assurance {IA) policy focusing on ensuring the integrity, availability,confidentiality, and authenticity of information systems.", "Establish a Defense-in-Depth strategy, incorporating multiple layers of security measures to increase the complexity and decrease the likelihood of a successful attack."],
-            answer: ""
+            answer: "D. Establish a Defense-in-Depth strategy, incorporating multiple layers of security measures to increase the complexity and decrease the likelihood of a successful attack."
         },
         {
             question: `A cyber attacker has initiated a series of activities againse a high-profite organization following the Cyber Kill Chain Methodology. The attacker is presently in the "Delivery" stage. As an Ethical Hacker, you are trying to anticipate the adversary's next move. What is the most probable subsequent action from the attacker based on the Cyber Kill Chain Methodology?`,
             options: ["The attacker will exploit the malicious payload delivered to the target organization and establish a foothold.", "The attacker will start reconnaissance to gather as much information as possible about the target.", "The attacker will attempt to escalate privileges to gain complete control of the compromised system.", "The attacker will initiate an active connection to the target system to gather more data"],
-            answer: ""
+            answer: "A. The attacker will exploit the malicious payload delivered to the target organization and establish a foothold."
         },
         {
             question: "A multinational organization has recently faced a severe information security breach. Investigations reveal that the attacker had a high degree of understanding of the organization's internal processes and systems. This knowledge was utilized to bypass security controls and corrupt valuable resources. Considering this event, the security team is contemplating the type of attack that occurred and the steps they could have taken to prevent it. Choose the most plausible type of attack and a countermeasure that the organization could have employed:",
             options: ["Passive attack and the organization should have used encryption techniques.", "Distribution attack and the organization could have ensured software and hardware integrity checks", "Insider attacks and the organization should have implemented robust access control and monitoring", "Active attack and the organization could have used network traffic analysis."],
-            answer: ""
+            answer: "C. Insider attacks and the organization should have implemented robust access control and monitoring"
         },
         {
             question: "Your company, Encryptor Corp, is developing a new application that will handle highly sensitive user information. As a cybersecurity specialist, you want to ensure this data is securely stored. The development team proposes a method where data is hashed and then encrypted before storage. However, you want an added layer of security to verify the integrity of the data upon retrieval. Which of the following cryptographic concepts should you propose to the team?",
             options: ["Switch to elliptic curve cryptography.", "Implement a block cipher mode of operation.", "Suggest using salt with hashing.", "Apply a digital signature mechanism."],
-            answer: ""
+            answer: "D. Apply a digital signature mechanism."
         },
         {
             question: "A security analyst is investigating a potential network-level session hijacking incident. During the investigation, the analyst finds that the attacker has been using a technique in which they injected an authentic-looking reset packet using a spoofed source IP address and a guessed acknowledgment number. As a result, the victim's connection was reset. Which of the following hijacking techniques has the attacker most likely used?",
             options: ["TCP/IP hijacking", "Blind hijacking", "UDP hijacking", "RST hijacking"],
-            answer: ""
+            answer: "D. RST hijacking"
         },
         {
             question: "As a cybersecurity analyst for a large corporation, you are auditing the company's mobile device management (MDM) policy. One of your areas of concern is data leakage from company-provide smartphones. You are worried about employees unintentionally installing malicious apps that could access sensitive corporate data on their devices. Which of the following would be an effective measure to prevent such data leakage?",
             options: ["Require biometric authentication for unlocking devices.", "Regularly change Wi-Fi passwords used by the devices.", "Mandate the use of VPNs when accessing corporate data.", "Enforce a policy that only allows app installations from approved corporate app stores."],
-            answer: ""
+            answer: "D. Enforce a policy that only allows app installations from approved corporate app stores"
         },
         {
             question: "As a certified ethical hacker, you are performing a system hacking process for a company that is suspicious about its security system. You found that the company's passwords are all known words, but not in the dictionary. You know that one employee always changes the password by just adding some numbers to the old password. Which attack is most likely to succeed in this scenario?",
             options: ["Hybrid Attack", "Rule-based Attack", "Password Spraying Attack", "Brute-Force Attack"],
-            answer: ""
+            answer: "B. Rule-based Attack"
         },
         {
             question: "As a cybersecurity analyst for SecureNet, you are performing a security assessment of a new mobile payment application. One of your primary concerns is the secure storage of customer data on the device. The application stores sensitive information such as credit card details and personal identification numbers (PINs) on the device. Which of the following measures would best ensure the security of this data?",
             options: ["Enable GPS tracking for all devices using the app.", "Regularly update the app to the latest version.", "Implement biometric authentication for app access.", "Encrypt all sensitive data stored on the device."],
-            answer: ""
+            answer: "D. Encrypt all sensitive data stored on the device."
         },
         {
             question: "You are a cybersecurity consultant for a healthcare organization that utilizes Internet of Medical Thing (loMT) devices, such as connected insulin pumps and heart rate monitors, to provide improve patientcare. Recently, the organization has been targeted by ransomware attacks. While the infrastructure was unaffected due to robust security measures, they are worried that the loMT device could be potential entry points for future attacks. What would be your main recommendation to protect these devices from such  threats?",
             options: ["Disable all wireless connectivity on loMT devices.", "Implemnent multi-factor authentication for all loMT devices.", "Regularly change the IP addresses of all loMT devices.", "Use network segmentation to isolate loMT devices from the main network"],
-            answer: ""
+            answer: "D. Use network segmentation to isolate loMT devices from the main network"
         },
         {
             question: "While working as an intern for a small business, you have been tasked with managing the company's web server. The server is being bombarded with requests, and the company's website is intermittently going offline. You suspect that this could be a Distributed Denial of Service (DDoS) attack. As an ethical hacker, which of the following steps would be your first course of action to mitigate the issue?",
             options: ["Increase the server's bandwidth", "Install a newer version of the server software", "Contact your Internet Service Provider {ISP) for assistance", "Implemnent IP address whitelisting"],
-            answer: ""
+            answer: "C. Contact your Internet Service Provider {ISP) for assistance"
         },
         {
             question: "Consider a scenario where a Certified Ethical Hacker is attempting to infiltrate a company's network without being detected. The hacker intends to use a stealth scan on a BSD-derived TCP/IP stack, but he suspects that the network security devices may be able to detect SYN packets. Based on this information, which of the following methods should he use to bypass the detection mechanisms and why?",
@@ -664,27 +664,27 @@
         {
             question: "A penetration tester is performing an enumeration on a client's network. The tester has acquired permission to perform enumeration activities. They have identified a remote inter-process communication (IPC) share and are trying to collect more information about it. The tester decides to use a common enumeration technique to collect the desired data. Which of the following techniques would be most appropriate for this scenario?",
             options: ["Extract usernames using email IDs", "Probe the IPC share by attempting to brute force admin credentials", "Conduct a DNS zone transfer", "Brute force Active Directory"],
-            answer: ""
+            answer: "B. Probe the IPC share by attempting to brute force admin credentials"
         },
         {
             question: "You're the security manager for a tech company that uses a database to store sensitive customer data. You have implemented countermeasures against SQL injection attacks. Recently, you noticed some suspicious activities and suspect an attacker is using SQL injection techniques. The attacker is believed to use different forms of payloads in his SQL queries. In the case of a successful SQL injection attack, which of the following payloads would have the most significant impact?",
             options: ["UNION SELECT NULL, NULL, NULL --: This payload manipulates the UNION SQL operator, enabling the attacker to retrieve data from different database tables", "'OR 'a'='a; DROP TABLE members; --: This payload combines the manipulation of the WHERE clause with a destructive action, causing data loss", "'OR username LIKE '%: This payload uses the LIKE operator to search for a specific pattern in a column", "'OR '1'='1: This payload manipulates the WHERE clause of an SQL statement, allowing the attacker to view unauthorized data"],
-            answer: ""
+            answer: "B. 'OR 'a'='a; DROP TABLE members; --: This payload combines the manipulation of the WHERE clause with a destructive action, causing data loss"
         },
         {
             question: "During a penetration test, an ethical hacker is exploring the security of a complex web application. The application heavily relies on JavaScript for client-side input sanitization, with an apparent assumption that this alone is adequate to prevent injection attacks. During the investigation, the ethical hacker also notices that the application utilizes cookies to manage user sessions but does not enable the HttpOnly flag. This lack of flag potentially exposes the cookies to client-side scripts. Given these identified vulnerabilities, what would be the most effective strategy for the ethical hacker to exploit this application?",
             options: ["Employ a brute-force attack to decipher user credentials, considering the lack of server-side validation", "Launch a Cross-Site Scripting (XSS) attack, aiming to bypass the client-side sanitization and exploit the exposure of session cookies", "Instigate a Distributed Denial of Service (DDoS) attack to overload the server, capitalizing on potential weak server-side security", "Implement an SQL Injection attack to take advantage of potential unvalidated input and gain unauthorized database access"],
-            answer: ""
+            answer: "B. Launch a Cross-Site Scripting (XSS) attack, aiming to bypass the client-side sanitization and exploit the exposure of session cookies"
         },
         {
             question: "A security analyst is preparing to analyze a potentially malicious program believed to have infiltrated an organization's network. To ensure the safety and integrity of the production environment, the analyst decided to use a sheep dip computer for the analysis. Before initiating the analysis, what key step should the analyst take?",
             options: ["Connect the sheep dip computer to the organization's internal network", "Store the potentially malicious program on an external medium, such as a CD-ROM", "Install the potentially malicious program on the sheep dip computer", "Run the potentially malicious program on the sheep dip computer to determine its behavior"],
-            answer: ""
+            answer: "B. Store the potentially malicious program on an external medium, such as a CD-ROM"
         },
         {
             question: "An audacious attacker is targeting a web server you oversee. He intends to perform a Slow HTTP POST attack, by manipulating 'a' HTTP connection. Each connection sends a byte of data every 'b' second, effectively holding up the connections for an extended period. Your server is designed to manage 'm' connections per second, but any connections exceeding this number tend to overwhelm the system. Given 'a=100' and variable 'm' along with the attacker's intention of maximizing the attack duration 'D=a*b', consider the following scenarios. Which is most likely to result in the longest duration of server unavailability?",
             options: ["m=95, b=10: Here, the server can handle 95 connections per second, but it falls short against the attacker's 100 connections, albeit the hold-up time per connection is lower", "m=105, b=12: The server can manage 105 connections per second, more than the attacker's 100 connetions, likely maintaining operation despite a moderate hold-up time", "m=90, b=15: The server can manage 90 connections per second, but the attacker's 100 connections exceed this, and with each connection held up for 15 seconds, the attack duration could be significant", "m=110, b=20: Despite the attacker sending 100 connections, the server can handle 110 connections per second, therefore likely staying operative, regardless of the hold-up time per connection"],
-            answer: ""
+            answer: "C. m=90, b=15: The server can manage 90 connections per second, but the attacker's 100 connections exceed this, and with each connection held up for 15 seconds, the attack duration could be significant"
         },
         {
             question: "An ethical hacker is hired to evaluate the defenses of an organization's database system which is known to employ a signature-based IDS. The hacker knows that some SQL Injection evasion techniques may allow him to bypass the system's signatures. During the operation, he successfully retrieved a list of usernames from the database without triggering an alarm by employing an advanced evasion technique. Which of the following could he have used?",
@@ -694,17 +694,17 @@
         {
             question: "As an IT intern, you have been asked to help set up a secure Wi-Fi network for a local coffee shop. The owners want to provide free Wi-Fi to their customers, but they are concerned about potential security risks. They are looking for a simple yet effective solution that would not require a lot of technical knowledge to manage. Which of the following security measures would be the most suitable in this context? ",
             options: ["Disable the network's SSID broadcast", "Implement WPA2 or WPA3 encryption", "Enable MAC address filtering", "Require custorers to use VPN when connected to the Wi-Fi"],
-            answer: ""
+            answer: "B. Implement WPA2 or WPA3 encryption"
         },
         {
             question: "John, a security analyst, is analyzing a server suspected of being compromised. The attacker has used an admin account and has already gained a foothold on the system. John discovers that a new Dynamic Link Library is loaded in the application directory of the affected server. This DLL does not have a fully qualified path and seems to be malicious. What privilege escalation technique has the attacker likely used to compromise this server?",
             options: ["DLL Hijacking", "Named Pipe Impersonation", "Spectre and Meltdown Vulnerabilities", "Exploiting Misconfigured Services"],
-            answer: ""
+            answer: "A. DLL Hijacking"
         },
         {
             question: "Your company, SecureTech Inc., is planning to transmit some sensitive data over an unsecured communication channel. As a cyber security expert, you decide to use symmetric key encryption to protect the data. However, you must also ensure the secure exchange of the symmetric key. Which of the following protocols would you recommend to the team to achieve this?",
             options: ["Switching all data transmission to the HTTPS protocol.", "Applying the Diffie-Hellman protocol to exchange the symmetric key.", "Utilizing SSH for secure remote logins to the servers.", "Implementing SSL certificates on your company's web servers."],
-            answer: ""
+            answer: "B. Applying the Diffie-Hellman protocol to exchange the symmetric key."
         },
         // Add more questions similarly
     ];
