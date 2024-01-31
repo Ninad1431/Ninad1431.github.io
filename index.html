@@ -19,19 +19,22 @@
         }
 
         .question {
-            background-color: #34495e; /* Dark container background color */
+            /* background-color: #2c3e50; */
+            background-color: #34495e;
             margin-bottom: 20px;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            color: #ecf0f1;
+            font-weight: 550;
         }
 
         .options label {
             display: block;
             margin-bottom: 10px; /* Increased spacing between options */
             color: #ecf0f1; /* Light text color for options */
+            font-weight: 450;
         }
-
         .dropdown-btn {
             cursor: pointer;
             color: #3498db;
@@ -63,14 +66,60 @@
             color: #3498db;
         }
 
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        #ceh-test-btn {
+            position: fixed;
+            top: 36px;
+            left: 50px;
+            padding: 14px;
+            background-color: #e74c3c;
+            color: #ecf0f1;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+            font-weight: bold
+        }
+        #start-test-btn:hover,
+#ceh-test-btn:hover {
+    transform: scale(1.25);
+    transition: transform 0.5s ease;
+}
+
+@keyframes colorFloat {
+    0%   { color: rgb(255, 0, 0); }   /* Red */
+    25%  { color: rgb(0, 255, 0); }   /* Green */
+    50%  { color: rgb(0, 0, 255); }   /* Blue */
+    75%  { color: rgb(255, 255, 0); } /* Yellow */
+    100% { color: rgb(255, 0, 255); } /* Magenta */
+}
+
+#ceh-indication {
+    text-align: left;
+    font-size: 16px;
+    margin-top: 5px;
+    animation: colorFloat 5s infinite; /* Change the duration (5s) as needed */
+}
+
     </style>
 </head>
 <body>
 <h1>CEH Latest Dumps</h1>
+<button id="ceh-test-btn" onclick="redirectToCEHTest()">CEH Test</button>
+<p id="ceh-indication">For CEH test, click here</p>
 <div id="quiz-container"></div>
 <div id="quiz-container"></div>
 <button id="evaluate-btn" onclick="evaluateQuiz()">Evaluate</button>
 <script>
+
+    function redirectToCEHTest() {
+        window.location.href = 'https://ninad1431.github.io/cehtest';
+    }
     // Sample questions
     const questions = [
     {
@@ -563,7 +612,7 @@
         {
             question: "As a certified ethical hacker, you are tasked with gaining information about an enterprise's internal network. You are permitted to test the network's security using enumeration techniques. You successfully obtain a list of usernames using email IDs and execute a DNS Zone Transfer. Which enumeration technique would be most effective for your next move given that you have identified open TCP ports 25 (SMTP) and 139 (NetBIOS Session Service)?",
             options: ["Perform a brute force attack on Microsoft Active Directory to extract valid usernames", "Exploit the NFS protocol or TCP port 2049 to gain control over a remote system", "Use SNMP to extract usernames given the community strings", "Exploit the NetBIOS Session Service on TCP port 139 to gain unauthorized access to the file system"],
-            answer: ""
+            answer: "D. Exploit the NetBIOS Session Service on TCP port 139 to gain unauthorized access to the file system"
         },
         {
             question: "An ethical hacker is attempting to crack NTLM hashed passwords from a Windows SAM file using a rainbow table attack. He has dumped the on-disk contents of the SAM file successfully and noticed that all LM hashes are blank. Given this scenario, which of the following would be the most likely reason for the blank LM hashes?",
@@ -659,7 +708,7 @@
         {
             question: "Consider a scenario where a Certified Ethical Hacker is attempting to infiltrate a company's network without being detected. The hacker intends to use a stealth scan on a BSD-derived TCP/IP stack, but he suspects that the network security devices may be able to detect SYN packets. Based on this information, which of the following methods should he use to bypass the detection mechanisms and why?",
             options: ["TCP Connect/Full-Open Scan, because it completes a three-way handshake with the target machine", "ACK Flag Probe Scan, because it exploits the vulnerabilities within the BSD-derived TCP/IP stack", "Maimon Scan, because it is very similar to NULL, FIN, and Xmas scans, but the probe used here is FIN/ACK", "Xmas Scan, because it can pass through filters undetected, depending on the security mechanisms installed"],
-            answer: ""
+            answer: "D. Xmas Scan, because it can pass through filters undetected, depending on the security mechanisms installed"
         },
         {
             question: "A penetration tester is performing an enumeration on a client's network. The tester has acquired permission to perform enumeration activities. They have identified a remote inter-process communication (IPC) share and are trying to collect more information about it. The tester decides to use a common enumeration technique to collect the desired data. Which of the following techniques would be most appropriate for this scenario?",
@@ -689,7 +738,7 @@
         {
             question: "An ethical hacker is hired to evaluate the defenses of an organization's database system which is known to employ a signature-based IDS. The hacker knows that some SQL Injection evasion techniques may allow him to bypass the system's signatures. During the operation, he successfully retrieved a list of usernames from the database without triggering an alarm by employing an advanced evasion technique. Which of the following could he have used?",
             options: ["Using the URL encoding method to replace characters with their ASCII codes in hexadecimal form", `Implementing sophisticated matches such as "OR 'john' = 'john'" in place of classical matches like "OR 1=1"`, "Utilizing the char encoding function to convert hexadecimal and decimal values into characters that pass-through SQL engine parsing", "Manipulating white spaces in SQL queries to bypass signature detection"],
-            answer: ""
+            answer: "D. Manipulating white spaces in SQL queries to bypass signature detection"
         },
         {
             question: "As an IT intern, you have been asked to help set up a secure Wi-Fi network for a local coffee shop. The owners want to provide free Wi-Fi to their customers, but they are concerned about potential security risks. They are looking for a simple yet effective solution that would not require a lot of technical knowledge to manage. Which of the following security measures would be the most suitable in this context? ",
