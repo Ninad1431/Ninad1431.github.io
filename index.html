@@ -121,12 +121,63 @@ h1 {
 <br>
 <button id="ceh-test-btn" onclick="redirectToCEHTest()">CEH Test</button>
 
+    					<!--
+						Contact Form
+					-->
+					<div class="content contacts">
+
+						<!-- title -->
+						<div class="title">Contact Form</div>
+
+						<!-- content -->
+						<div class="row">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="contact_form">
+									<form action="https://formspree.io/f/mvoeagqy" method="post">
+										<div class="row">
+											<div class="col col-d-6 col-t-6 col-m-12">
+												<div class="group-val">
+													<input type="text" name="name" placeholder="Full Name" />
+												</div>
+											</div>
+											<div class="col col-d-6 col-t-6 col-m-12">
+												<div class="group-val">
+													<input type="text" name="email" placeholder="Email Address" />
+												</div>
+											</div>
+											<div class="col col-d-12 col-t-12 col-m-12">
+												<div class="group-val">
+													<textarea name="message" placeholder="Your Message"></textarea>
+												</div>
+											</div>
+										</div>
+										<div class="g-recaptcha" data-sitekey="6LdtoXApAAAAAJyh_NoGHSAvD6uLKr4_ad0SSepk"></div>
+										<br />
+										<div class="align-left">
+											<button>
+												<a class="button">
+													<span class="text">Send Message</span>
+													<span class="arrow"></span>
+												</a></button>
+										</div>
+									</form>
+									<div class="alert-success">
+										<p>Thanks, your message is sent successfully.</p>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+
 
 <div id="quiz-container"></div>
 <div id="quiz-container"></div>
 <button id="evaluate-btn" onclick="evaluateQuiz()">Evaluate</button>
 <script>
-
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
     function redirectToCEHTest() {
         window.location.href = 'https://ninad1431.github.io/cehtest';
     }
